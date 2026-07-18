@@ -1,0 +1,424 @@
+{
+  "specVersion": "1.0",
+  "host": {
+    "displayName": "otwarteAPI.pl",
+    "identifier": "otwarteapi.pl",
+    "documentationUrl": "https://otwarteapi.pl/llms.txt"
+  },
+  "entries": [
+    {
+      "identifier": "urn:air:otwarteapi.pl:api:wykaz-vat",
+      "displayName": "Wykaz VAT (Biała Lista) — Ministerstwo Finansów",
+      "type": "application/json",
+      "jurisdiction": "PL",
+      "url": "https://wl-api.mf.gov.pl/",
+      "description": "Oficjalne REST API Ministerstwa Finansów do sprawdzania statusu VAT (czynny/zwolniony/niezarejestrowany) i rachunków bankowych podmiotu po numerze NIP. Bez klucza, bez rejestracji.",
+      "tags": ["firmy", "podatki", "rejestr-publiczny", "bezplatne", "bez-klucza"],
+      "representativeQueries": [
+        "czy ten NIP jest czynnym podatnikiem VAT",
+        "sprawdź czy rachunek bankowy jest na białej liście dla danego NIP"
+      ],
+      "metadata": { "auth": "brak", "format": "REST/JSON", "instytucja": "Ministerstwo Finansów" },
+      "updatedAt": "2026-07-18",
+      "en": {
+        "displayName": "VAT Register (Biała Lista) — Ministry of Finance",
+        "description": "Official REST API of Poland's Ministry of Finance to check VAT status (active/exempt/unregistered) and a business's bank accounts by tax ID (NIP). No key, no registration required.",
+        "representativeQueries": [
+          "is this tax ID an active VAT payer",
+          "check if a bank account is on the White List for a given tax ID"
+        ]
+      }
+    },
+    {
+      "identifier": "urn:air:otwarteapi.pl:api:krs",
+      "displayName": "Krajowy Rejestr Sądowy (KRS) — API Ministerstwa Sprawiedliwości",
+      "type": "application/json",
+      "jurisdiction": "PL",
+      "url": "https://prs.ms.gov.pl/krs/openApi",
+      "description": "Oficjalne API do pobierania odpisów aktualnych z KRS (forma prawna, PKD, kapitał zakładowy, adres, reprezentacja) po numerze KRS. Bez klucza.",
+      "tags": ["firmy", "rejestr-publiczny", "bezplatne", "bez-klucza"],
+      "representativeQueries": [
+        "pobierz odpis KRS dla danego numeru",
+        "kto reprezentuje tę spółkę według KRS"
+      ],
+      "metadata": { "auth": "brak", "format": "REST/JSON", "instytucja": "Ministerstwo Sprawiedliwości" },
+      "updatedAt": "2026-07-18",
+      "en": {
+        "displayName": "National Court Register (KRS) — Ministry of Justice API",
+        "description": "Official API for retrieving current KRS extracts (legal form, PKD codes, share capital, address, representation) by KRS number. No key required.",
+        "representativeQueries": [
+          "get the KRS extract for a given number",
+          "who represents this company according to KRS"
+        ]
+      }
+    },
+    {
+      "identifier": "urn:air:otwarteapi.pl:api:vies",
+      "displayName": "VIES — weryfikacja unijnego numeru VAT (Komisja Europejska)",
+      "type": "application/json",
+      "jurisdiction": "EU",
+      "url": "https://ec.europa.eu/taxation_customs/vies/",
+      "description": "Usługa Komisji Europejskiej do weryfikacji ważności numeru VAT-UE kontrahenta z dowolnego kraju członkowskiego. Bez klucza.",
+      "tags": ["firmy", "podatki", "unia-europejska", "bezplatne", "bez-klucza"],
+      "representativeQueries": [
+        "czy numer VAT-UE kontrahenta jest ważny w VIES"
+      ],
+      "metadata": { "auth": "brak", "format": "REST/JSON", "instytucja": "Komisja Europejska" },
+      "updatedAt": "2026-07-18",
+      "en": {
+        "displayName": "VIES — EU VAT number validation (European Commission)",
+        "description": "European Commission service to validate a counterparty's EU VAT number from any member state. No key required.",
+        "representativeQueries": [
+          "is this counterparty's EU VAT number valid in VIES"
+        ]
+      }
+    },
+    {
+      "identifier": "urn:air:otwarteapi.pl:api:ceidg",
+      "displayName": "CEIDG — Hurtownia Danych (API v2)",
+      "type": "application/json",
+      "jurisdiction": "PL",
+      "url": "https://dane.biznes.gov.pl/",
+      "description": "Dane jednoosobowych działalności gospodarczych z CEIDG i Biznes.gov.pl. Wymaga bezpłatnej rejestracji i klucza JWT wysyłanego mailem.",
+      "tags": ["firmy", "rejestr-publiczny", "wymaga-klucza"],
+      "representativeQueries": [
+        "sprawdź czy działalność gospodarcza o danym NIP jest aktywna w CEIDG"
+      ],
+      "metadata": { "auth": "klucz JWT (rejestracja mailowa)", "format": "REST/JSON" },
+      "updatedAt": "2026-07-18",
+      "en": {
+        "displayName": "CEIDG — Data Warehouse (API v2)",
+        "description": "Data on Polish sole proprietorships from CEIDG and Biznes.gov.pl. Requires free registration and a JWT key sent by email.",
+        "representativeQueries": [
+          "check if a sole proprietorship with this tax ID is active in CEIDG"
+        ],
+        "authLabel": "JWT key (email registration)"
+      }
+    },
+    {
+      "identifier": "urn:air:otwarteapi.pl:api:gus-regon",
+      "displayName": "REGON — usługa BIR1.1 (GUS)",
+      "type": "application/soap+xml",
+      "jurisdiction": "PL",
+      "url": "https://api.stat.gov.pl/Home/RegonApi",
+      "description": "Usługa sieciowa SOAP Głównego Urzędu Statystycznego do pobierania danych rejestrowych REGON. Wymaga darmowego klucza (USER_KEY) na wniosek mailowy.",
+      "tags": ["firmy", "rejestr-publiczny", "dane-statystyczne", "wymaga-klucza", "soap"],
+      "representativeQueries": [
+        "pobierz dane rejestrowe REGON dla danego NIP"
+      ],
+      "metadata": { "auth": "USER_KEY (bezpłatny, na wniosek mailowy)", "format": "SOAP/XML", "instytucja": "GUS" },
+      "updatedAt": "2026-07-18",
+      "en": {
+        "displayName": "REGON — BIR1.1 service (GUS)",
+        "description": "SOAP web service of Poland's Central Statistical Office for retrieving REGON registry data. Requires a free key (USER_KEY) by email request.",
+        "representativeQueries": [
+          "get REGON registry data for a given tax ID"
+        ],
+        "authLabel": "USER_KEY (free, by email request)"
+      }
+    },
+    {
+      "identifier": "urn:air:otwarteapi.pl:api:nbp-kursy",
+      "displayName": "Kursy walut i cen złota — API NBP",
+      "type": "application/json",
+      "jurisdiction": "PL",
+      "url": "https://api.nbp.pl/",
+      "description": "Publiczne REST API Narodowego Banku Polskiego z bieżącymi i historycznymi kursami walut (tabele A/B/C) oraz cenami złota. Bez klucza.",
+      "tags": ["finanse", "waluty", "bezplatne", "bez-klucza"],
+      "representativeQueries": [
+        "jaki jest dzisiejszy kurs EUR",
+        "kurs USD z ostatnich 10 dni"
+      ],
+      "metadata": { "auth": "brak", "format": "REST/JSON+XML", "instytucja": "Narodowy Bank Polski" },
+      "updatedAt": "2026-07-18",
+      "en": {
+        "displayName": "Exchange rates and gold prices — NBP API",
+        "description": "Public REST API of the National Bank of Poland with current and historical exchange rates (tables A/B/C) and gold prices. No key required.",
+        "representativeQueries": [
+          "what is today's EUR exchange rate",
+          "USD rate for the last 10 days"
+        ]
+      }
+    },
+    {
+      "identifier": "urn:air:otwarteapi.pl:api:gus-bdl",
+      "displayName": "Bank Danych Lokalnych (BDL) — API GUS",
+      "type": "application/json",
+      "jurisdiction": "PL",
+      "url": "https://api.stat.gov.pl/Home/BdlApi",
+      "description": "Największa polska baza danych statystycznych (gospodarka, społeczeństwo, środowisko) w podziale terytorialnym. REST, JSON/XML/JSONAPI. Bez klucza, opcjonalny nagłówek X-ClientId dla wyższych limitów.",
+      "tags": ["dane-statystyczne", "otwarte-dane", "bezplatne"],
+      "representativeQueries": [
+        "ile mieszkańców ma dana gmina według GUS",
+        "dane statystyczne dla powiatu"
+      ],
+      "metadata": { "auth": "brak (opcjonalny klucz X-ClientId)", "format": "REST/JSON", "instytucja": "GUS" },
+      "updatedAt": "2026-07-18",
+      "en": {
+        "displayName": "Local Data Bank (BDL) — GUS API",
+        "description": "Poland's largest statistical database (economy, society, environment) broken down by territory. REST, JSON/XML/JSONAPI. No key required, optional X-ClientId header for higher limits.",
+        "representativeQueries": [
+          "how many residents does a given municipality have per GUS",
+          "statistical data for a county (powiat)"
+        ],
+        "authLabel": "no key required (optional X-ClientId)"
+      }
+    },
+    {
+      "identifier": "urn:air:otwarteapi.pl:api:dane-gov-pl",
+      "displayName": "Otwarte Dane — api.dane.gov.pl",
+      "type": "application/json",
+      "jurisdiction": "PL",
+      "url": "https://api.dane.gov.pl/doc",
+      "description": "Centralny portal otwartych danych administracji publicznej — tysiące zbiorów danych z ministerstw i urzędów, jednolite REST API. Bez klucza.",
+      "tags": ["otwarte-dane", "dane-statystyczne", "bezplatne", "bez-klucza"],
+      "representativeQueries": [
+        "znajdź zbiór danych o jakości powietrza",
+        "wyszukaj otwarte dane danego ministerstwa"
+      ],
+      "metadata": { "auth": "brak", "format": "REST/JSON", "instytucja": "Kancelaria Prezesa Rady Ministrów" },
+      "updatedAt": "2026-07-18",
+      "en": {
+        "displayName": "Open Data — api.dane.gov.pl",
+        "description": "Central open-data portal of Polish public administration — thousands of datasets from ministries and agencies, a unified REST API. No key required.",
+        "representativeQueries": [
+          "find a dataset about air quality",
+          "search open data from a given ministry"
+        ]
+      }
+    },
+    {
+      "identifier": "urn:air:otwarteapi.pl:api:imgw",
+      "displayName": "Dane publiczne IMGW-PIB (pogoda i hydrologia)",
+      "type": "application/json",
+      "jurisdiction": "PL",
+      "url": "https://danepubliczne.imgw.pl/apiinfo",
+      "description": "Bieżące i archiwalne dane synoptyczne, hydrologiczne i ostrzeżenia meteorologiczne Instytutu Meteorologii i Gospodarki Wodnej. REST, JSON/XML/CSV, bez klucza.",
+      "tags": ["pogoda", "dane-przestrzenne", "bezplatne", "bez-klucza"],
+      "representativeQueries": [
+        "jaka jest aktualna temperatura na danej stacji synoptycznej",
+        "stan wody na rzece"
+      ],
+      "metadata": { "auth": "brak", "format": "REST/JSON+XML+CSV", "instytucja": "IMGW-PIB" },
+      "updatedAt": "2026-07-18",
+      "en": {
+        "displayName": "IMGW-PIB public data (weather and hydrology)",
+        "description": "Current and archival synoptic, hydrological data and weather warnings from Poland's Institute of Meteorology and Water Management. REST, JSON/XML/CSV, no key required.",
+        "representativeQueries": [
+          "what's the current temperature at a given synoptic station",
+          "water level in a river"
+        ]
+      }
+    },
+    {
+      "identifier": "urn:air:otwarteapi.pl:api:warszawa-otwarte-dane",
+      "displayName": "Otwarte dane po warszawsku — api.um.warszawa.pl",
+      "type": "application/json",
+      "jurisdiction": "PL",
+      "url": "https://api.um.warszawa.pl/",
+      "description": "Dane miejskie Warszawy w czasie rzeczywistym: pozycje autobusów i tramwajów, parkingi P+R, stacje rowerów miejskich, jakość powietrza. Wymaga bezpłatnej rejestracji i klucza.",
+      "tags": ["dane-miejskie", "transport", "wymaga-klucza"],
+      "representativeQueries": [
+        "gdzie jest wolne miejsce na parkingu P+R w Warszawie",
+        "pozycja tramwaju na żywo"
+      ],
+      "metadata": { "auth": "klucz (bezpłatna rejestracja)", "format": "REST/JSON", "zasieg": "Warszawa" },
+      "updatedAt": "2026-07-18",
+      "en": {
+        "displayName": "Warsaw open data — api.um.warszawa.pl",
+        "description": "Real-time Warsaw city data: bus and tram positions, Park&Ride occupancy, city bike stations, air quality. Requires free registration and a key.",
+        "representativeQueries": [
+          "where's a free spot in a Park&Ride in Warsaw",
+          "live tram position"
+        ],
+        "authLabel": "key (free registration)"
+      }
+    },
+    {
+      "identifier": "urn:air:otwarteapi.pl:api:e-zamowienia",
+      "displayName": "Platforma e-Zamówienia — API zamówień publicznych",
+      "type": "application/json",
+      "jurisdiction": "PL",
+      "url": "https://ezamowienia.gov.pl/pl/integracja/",
+      "description": "Oficjalne API Urzędu Zamówień Publicznych do pobierania ogłoszeń i planów postępowań o zamówienia publiczne. Wysoki próg wejścia: formalna rejestracja, OAuth2 Client Credentials, wymagany raport z testów integracyjnych.",
+      "tags": ["zamowienia-publiczne", "rejestr-publiczny", "wymaga-rejestracji", "oauth2"],
+      "representativeQueries": [
+        "znajdź aktualne przetargi publiczne w danej kategorii"
+      ],
+      "metadata": { "auth": "OAuth2 Client Credentials + formalna procedura dostępu", "format": "REST/JSON", "instytucja": "Urząd Zamówień Publicznych" },
+      "updatedAt": "2026-07-18",
+      "en": {
+        "displayName": "e-Zamówienia Platform — public procurement API",
+        "description": "Official API of Poland's Public Procurement Office for retrieving tender notices and procurement plans. High barrier to entry: formal registration, OAuth2 Client Credentials, an integration test report is required.",
+        "representativeQueries": [
+          "find current public tenders in a given category"
+        ],
+        "authLabel": "OAuth2 Client Credentials"
+      }
+    },
+    {
+      "identifier": "urn:air:otwarteapi.pl:mcp:skanfirmy",
+      "displayName": "skanfirmy.pl — serwer MCP do weryfikacji firm",
+      "type": "application/mcp-server+json",
+      "jurisdiction": "PL",
+      "url": "https://skanfirmy.pl/mcp",
+      "description": "Bezstanowy serwer MCP (JSON-RPC 2.0 przez Streamable HTTP) z 6 narzędziami do weryfikacji polskich firm: status VAT, dane z KRS, rachunek bankowy na Białej Liście, mikrorachunek podatkowy, kody PKD 2025, odsetki ustawowe/handlowe. Łączy dane z Wykazu VAT (MF), KRS (MS) i GUS w jednym wywołaniu. Bez klucza. Dostępne też jako zwykłe REST GET: skanfirmy.pl/nip/{numer} i skanfirmy.pl/vies/{kraj}/{numer}.",
+      "tags": ["firmy", "rejestr-publiczny", "mcp", "bezplatne", "bez-klucza", "flagowy"],
+      "representativeQueries": [
+        "sprawdź NIP kontrahenta",
+        "zweryfikuj rachunek bankowy na białej liście VAT",
+        "wygeneruj mikrorachunek podatkowy z NIP"
+      ],
+      "metadata": { "auth": "brak", "protokol": "MCP 2025-06-18, JSON-RPC 2.0", "narzedzia": 6 },
+      "updatedAt": "2026-07-18",
+      "en": {
+        "displayName": "skanfirmy.pl — MCP server for company verification",
+        "description": "Stateless MCP server (JSON-RPC 2.0 over Streamable HTTP) with 6 tools to verify Polish companies: VAT status, KRS data, White List bank account, tax micro-account, 2025 PKD codes, statutory/commercial interest. Combines data from the VAT Register (Ministry of Finance), KRS (Ministry of Justice) and GUS in one call. No key required. Also available as plain REST GET: skanfirmy.pl/nip/{number} and skanfirmy.pl/vies/{country}/{number}.",
+        "representativeQueries": [
+          "check a counterparty's tax ID",
+          "verify a bank account on the VAT White List",
+          "generate a tax micro-account from a tax ID"
+        ]
+      }
+    },
+    {
+      "identifier": "urn:air:otwarteapi.pl:api:ecb-sdw",
+      "displayName": "Europejski Bank Centralny — SDMX 2.1 RESTful (Statistical Data Warehouse)",
+      "type": "application/json",
+      "jurisdiction": "EU",
+      "url": "https://data.ecb.europa.eu/help/api/overview",
+      "description": "Dane statystyczne EBC: referencyjne kursy euro, stopy procentowe, inflacja, agregaty monetarne strefy euro. Standard SDMX 2.1, wyniki w XML/JSON/CSV. Bez klucza.",
+      "tags": ["finanse", "waluty", "dane-statystyczne", "bezplatne", "bez-klucza"],
+      "representativeQueries": [
+        "jaka jest aktualna referencyjna stopa procentowa EBC",
+        "historyczny kurs euro do dolara wg EBC"
+      ],
+      "metadata": { "auth": "brak", "format": "REST/SDMX (JSON/XML/CSV)", "instytucja": "Europejski Bank Centralny" },
+      "updatedAt": "2026-07-19",
+      "en": {
+        "displayName": "European Central Bank — SDMX 2.1 RESTful (Statistical Data Warehouse)",
+        "description": "ECB statistical data: reference euro rates, interest rates, inflation, euro area monetary aggregates. SDMX 2.1 standard, results in XML/JSON/CSV. No key required.",
+        "representativeQueries": [
+          "what is the ECB's current reference interest rate",
+          "historical EUR/USD rate per the ECB"
+        ]
+      }
+    },
+    {
+      "identifier": "urn:air:otwarteapi.pl:api:eurostat",
+      "displayName": "Eurostat — REST API statystyk Unii Europejskiej",
+      "type": "application/json",
+      "jurisdiction": "EU",
+      "url": "https://ec.europa.eu/eurostat/web/user-guides/data-browser/api-data-access/api-introduction",
+      "description": "Oficjalne statystyki wszystkich krajów UE (gospodarka, demografia, rynek pracy, środowisko) w jednym REST API zgodnym z SDMX. Bez klucza.",
+      "tags": ["dane-statystyczne", "otwarte-dane", "bezplatne", "bez-klucza"],
+      "representativeQueries": [
+        "stopa bezrobocia w krajach Unii Europejskiej",
+        "porównaj PKB per capita w krajach UE"
+      ],
+      "metadata": { "auth": "brak", "format": "REST/SDMX (JSON/CSV/XML)", "instytucja": "Eurostat / Komisja Europejska" },
+      "updatedAt": "2026-07-19",
+      "en": {
+        "displayName": "Eurostat — REST API for EU statistics",
+        "description": "Official statistics for all EU countries (economy, demographics, labour market, environment) in a single SDMX-compliant REST API. No key required.",
+        "representativeQueries": [
+          "unemployment rate across EU countries",
+          "compare GDP per capita across EU countries"
+        ]
+      }
+    },
+    {
+      "identifier": "urn:air:otwarteapi.pl:api:eur-lex",
+      "displayName": "EUR-Lex / CELLAR — akty prawne Unii Europejskiej",
+      "type": "application/sparql-results+json",
+      "jurisdiction": "EU",
+      "url": "https://eur-lex.europa.eu/content/help/data-reuse/webservice.html",
+      "description": "Pełny tekst i metadane wszystkich aktów prawnych UE (rozporządzenia, dyrektywy, wyroki TSUE) jako dane RDF, dostępne przez SPARQL i REST. Bez klucza, limit 5 równoległych zapytań, timeout 60 s.",
+      "tags": ["prawo", "rejestr-publiczny", "bezplatne", "bez-klucza"],
+      "representativeQueries": [
+        "znajdź dyrektywę UE o danym numerze",
+        "wyszukaj wyroki Trybunału Sprawiedliwości UE w danej sprawie"
+      ],
+      "metadata": { "auth": "brak", "format": "SPARQL/REST (RDF)", "limit": "5 równoległych zapytań, timeout 60s", "instytucja": "Urząd Publikacji Unii Europejskiej" },
+      "updatedAt": "2026-07-19",
+      "en": {
+        "displayName": "EUR-Lex / CELLAR — EU legal acts",
+        "description": "Full text and metadata of all EU legal acts (regulations, directives, CJEU rulings) as RDF data, available via SPARQL and REST. No key required, limit of 5 concurrent requests, 60s timeout.",
+        "representativeQueries": [
+          "find an EU directive by number",
+          "search CJEU rulings on a given case"
+        ]
+      }
+    },
+    {
+      "identifier": "urn:air:otwarteapi.pl:api:data-europa-eu",
+      "displayName": "data.europa.eu — europejski portal otwartych danych",
+      "type": "application/json",
+      "jurisdiction": "EU",
+      "url": "https://data.europa.eu/en/which-apis-are-available-and-where-can-i-find-information-about-them",
+      "description": "Centralny katalog otwartych danych ze wszystkich krajów UE i instytucji unijnych — setki tysięcy zbiorów danych. Search API (REST) i SPARQL nad pełnymi metadanymi RDF. Bez klucza.",
+      "tags": ["otwarte-dane", "dane-statystyczne", "bezplatne", "bez-klucza"],
+      "representativeQueries": [
+        "znajdź zbiory danych o jakości powietrza we wszystkich krajach UE",
+        "wyszukaj otwarte dane danej instytucji unijnej"
+      ],
+      "metadata": { "auth": "brak", "format": "REST Search API + SPARQL", "instytucja": "Komisja Europejska" },
+      "updatedAt": "2026-07-19",
+      "en": {
+        "displayName": "data.europa.eu — the European open data portal",
+        "description": "Central catalog of open data from all EU countries and institutions — hundreds of thousands of datasets. Search API (REST) and SPARQL over full RDF metadata. No key required.",
+        "representativeQueries": [
+          "find datasets about air quality across all EU countries",
+          "search open data from a given EU institution"
+        ]
+      }
+    },
+    {
+      "identifier": "urn:air:otwarteapi.pl:api:destatis-genesis",
+      "displayName": "GENESIS-Online — Statistisches Bundesamt (Niemcy)",
+      "type": "application/json",
+      "jurisdiction": "DE",
+      "url": "https://www.destatis.de/EN/Service/OpenData/api-webservice.html",
+      "description": "REST/JSON API niemieckiego Federalnego Urzędu Statystycznego (Destatis) do bazy GENESIS-Online — dane gospodarcze, demograficzne i społeczne Niemiec. Bez klucza, bez rejestracji.",
+      "tags": ["dane-statystyczne", "otwarte-dane", "bezplatne", "bez-klucza"],
+      "representativeQueries": [
+        "liczba ludności Niemiec według landu",
+        "dane gospodarcze Niemiec z GENESIS-Online"
+      ],
+      "metadata": { "auth": "brak", "format": "REST/JSON", "instytucja": "Statistisches Bundesamt (Destatis)" },
+      "updatedAt": "2026-07-18",
+      "en": {
+        "displayName": "GENESIS-Online — Federal Statistical Office (Germany)",
+        "description": "REST/JSON API of Germany's Federal Statistical Office (Destatis) for the GENESIS-Online database — Germany's economic, demographic and social data. No key, no registration required.",
+        "representativeQueries": [
+          "Germany's population by federal state",
+          "Germany's economic data from GENESIS-Online"
+        ]
+      }
+    },
+    {
+      "identifier": "urn:air:otwarteapi.pl:api:insee-sirene",
+      "displayName": "API Sirene — INSEE (Francja)",
+      "type": "application/json",
+      "jurisdiction": "FR",
+      "url": "https://portail-api.insee.fr/catalog/api/2ba0e549-5587-3ef1-9082-99cd865de66f",
+      "description": "Oficjalne API francuskiego rejestru przedsiębiorstw i placówek Sirene (SIREN/SIRET), prowadzonego przez INSEE. Bezpłatne, wymaga rejestracji konta i uwierzytelnienia OAuth2, limit 30 zapytań/min.",
+      "tags": ["firmy", "rejestr-publiczny", "wymaga-klucza"],
+      "representativeQueries": [
+        "sprawdź dane firmy francuskiej po numerze SIREN",
+        "wyszukaj przedsiębiorstwa we Francji po nazwie"
+      ],
+      "metadata": { "auth": "OAuth2 (bezpłatna rejestracja), limit 30/min", "format": "REST/JSON", "instytucja": "INSEE" },
+      "updatedAt": "2026-07-18",
+      "en": {
+        "displayName": "Sirene API — INSEE (France)",
+        "description": "Official API of France's business and establishment registry Sirene (SIREN/SIRET), run by INSEE. Free, requires account registration and OAuth2 authentication, limit 30 requests/min.",
+        "representativeQueries": [
+          "check a French company's data by SIREN number",
+          "search French businesses by name"
+        ],
+        "authLabel": "OAuth2 (free registration), limit 30/min"
+      }
+    }
+  ]
+}
