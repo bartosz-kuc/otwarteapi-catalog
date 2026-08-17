@@ -1,14 +1,15 @@
 # otwarteapi-catalog
 
 Publiczne dane katalogu stojące za [otwarteAPI.pl](https://otwarteapi.pl) —
-katalogu publicznych API Polski i Unii Europejskiej, opisanych tak by mogły
-być odkrywane i wywoływane przez agentów AI oraz ludzi.
+katalogu publicznych API rządowych z całego świata (Polska, Unia Europejska
+i kraje z 6 kontynentów — 32 jurysdykcje), opisanych tak by mogły być
+odkrywane i wywoływane przez agentów AI oraz ludzi.
 
 ## Co to jest
 
 `ai-catalog.json` w formacie **ARD (Agent Resource Directory)** — jeden
 maszynowo czytelny plik opisujący każde API: nazwę, opis, endpoint,
-wymagany klucz/autoryzację, jurysdykcję (PL/UE/DE/FR), tagi i
+wymagany klucz/autoryzację, jurysdykcję (kod kraju, `EU` lub `INT`), tagi i
 przykładowe zapytania. Ten sam plik serwuje sama strona pod
 [otwarteapi.pl/.well-known/ai-catalog.json](https://otwarteapi.pl/.well-known/ai-catalog.json).
 
@@ -35,7 +36,8 @@ stronę.
    kraju), `tags`, `metadata.auth` (`brak` jeśli bez klucza), oraz
    `representativeQueries` (2-3 przykładowe pytania, po jednym w
    naturalnym języku). API musi być **publiczne, oficjalne** (rządowe,
-   samorządowe lub instytucji UE) i mieć żywą, działającą dokumentację.
+   samorządowe lub międzynarodowej instytucji publicznej) i mieć żywą,
+   działającą dokumentację.
 2. **Poprawka istniejącego wpisu** (zmieniony endpoint, nieaktualny opis,
    błędna jurysdykcja): PR edytujący konkretny wpis, z krótkim
    uzasadnieniem w opisie PR.

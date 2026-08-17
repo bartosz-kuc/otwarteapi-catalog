@@ -13,12 +13,22 @@
       "jurisdiction": "PL",
       "url": "https://wl-api.mf.gov.pl/",
       "description": "Oficjalne REST API Ministerstwa Finansów do sprawdzania statusu VAT (czynny/zwolniony/niezarejestrowany) i rachunków bankowych podmiotu po numerze NIP. Bez klucza, bez rejestracji.",
-      "tags": ["firmy", "podatki", "rejestr-publiczny", "bezplatne", "bez-klucza"],
+      "tags": [
+        "firmy",
+        "podatki",
+        "rejestr-publiczny",
+        "bezplatne",
+        "bez-klucza"
+      ],
       "representativeQueries": [
         "czy ten NIP jest czynnym podatnikiem VAT",
         "sprawdź czy rachunek bankowy jest na białej liście dla danego NIP"
       ],
-      "metadata": { "auth": "brak", "format": "REST/JSON", "instytucja": "Ministerstwo Finansów" },
+      "metadata": {
+        "auth": "brak",
+        "format": "REST/JSON",
+        "instytucja": "Ministerstwo Finansów"
+      },
       "updatedAt": "2026-07-18",
       "en": {
         "displayName": "VAT Register (Biała Lista) — Ministry of Finance",
@@ -36,12 +46,21 @@
       "jurisdiction": "PL",
       "url": "https://prs.ms.gov.pl/krs/openApi",
       "description": "Oficjalne API do pobierania odpisów aktualnych z KRS (forma prawna, PKD, kapitał zakładowy, adres, reprezentacja) po numerze KRS. Bez klucza.",
-      "tags": ["firmy", "rejestr-publiczny", "bezplatne", "bez-klucza"],
+      "tags": [
+        "firmy",
+        "rejestr-publiczny",
+        "bezplatne",
+        "bez-klucza"
+      ],
       "representativeQueries": [
         "pobierz odpis KRS dla danego numeru",
         "kto reprezentuje tę spółkę według KRS"
       ],
-      "metadata": { "auth": "brak", "format": "REST/JSON", "instytucja": "Ministerstwo Sprawiedliwości" },
+      "metadata": {
+        "auth": "brak",
+        "format": "REST/JSON",
+        "instytucja": "Ministerstwo Sprawiedliwości"
+      },
       "updatedAt": "2026-07-18",
       "en": {
         "displayName": "National Court Register (KRS) — Ministry of Justice API",
@@ -59,11 +78,21 @@
       "jurisdiction": "EU",
       "url": "https://ec.europa.eu/taxation_customs/vies/",
       "description": "Usługa Komisji Europejskiej do weryfikacji ważności numeru VAT-UE kontrahenta z dowolnego kraju członkowskiego. Bez klucza.",
-      "tags": ["firmy", "podatki", "unia-europejska", "bezplatne", "bez-klucza"],
+      "tags": [
+        "firmy",
+        "podatki",
+        "unia-europejska",
+        "bezplatne",
+        "bez-klucza"
+      ],
       "representativeQueries": [
         "czy numer VAT-UE kontrahenta jest ważny w VIES"
       ],
-      "metadata": { "auth": "brak", "format": "REST/JSON", "instytucja": "Komisja Europejska" },
+      "metadata": {
+        "auth": "brak",
+        "format": "REST/JSON",
+        "instytucja": "Komisja Europejska"
+      },
       "updatedAt": "2026-07-18",
       "en": {
         "displayName": "VIES — EU VAT number validation (European Commission)",
@@ -80,11 +109,18 @@
       "jurisdiction": "PL",
       "url": "https://dane.biznes.gov.pl/",
       "description": "Dane jednoosobowych działalności gospodarczych z CEIDG i Biznes.gov.pl. Wymaga bezpłatnej rejestracji i klucza JWT wysyłanego mailem.",
-      "tags": ["firmy", "rejestr-publiczny", "wymaga-klucza"],
+      "tags": [
+        "firmy",
+        "rejestr-publiczny",
+        "wymaga-klucza"
+      ],
       "representativeQueries": [
         "sprawdź czy działalność gospodarcza o danym NIP jest aktywna w CEIDG"
       ],
-      "metadata": { "auth": "klucz JWT (rejestracja mailowa)", "format": "REST/JSON" },
+      "metadata": {
+        "auth": "klucz JWT (rejestracja mailowa)",
+        "format": "REST/JSON"
+      },
       "updatedAt": "2026-07-18",
       "en": {
         "displayName": "CEIDG — Data Warehouse (API v2)",
@@ -102,11 +138,21 @@
       "jurisdiction": "PL",
       "url": "https://api.stat.gov.pl/Home/RegonApi",
       "description": "Usługa sieciowa SOAP Głównego Urzędu Statystycznego do pobierania danych rejestrowych REGON. Wymaga darmowego klucza (USER_KEY) na wniosek mailowy.",
-      "tags": ["firmy", "rejestr-publiczny", "dane-statystyczne", "wymaga-klucza", "soap"],
+      "tags": [
+        "firmy",
+        "rejestr-publiczny",
+        "dane-statystyczne",
+        "wymaga-klucza",
+        "soap"
+      ],
       "representativeQueries": [
         "pobierz dane rejestrowe REGON dla danego NIP"
       ],
-      "metadata": { "auth": "USER_KEY (bezpłatny, na wniosek mailowy)", "format": "SOAP/XML", "instytucja": "GUS" },
+      "metadata": {
+        "auth": "USER_KEY (bezpłatny, na wniosek mailowy)",
+        "format": "SOAP/XML",
+        "instytucja": "GUS"
+      },
       "updatedAt": "2026-07-18",
       "en": {
         "displayName": "REGON — BIR1.1 service (GUS)",
@@ -124,12 +170,21 @@
       "jurisdiction": "PL",
       "url": "https://api.nbp.pl/",
       "description": "Publiczne REST API Narodowego Banku Polskiego z bieżącymi i historycznymi kursami walut (tabele A/B/C) oraz cenami złota. Bez klucza.",
-      "tags": ["finanse", "waluty", "bezplatne", "bez-klucza"],
+      "tags": [
+        "finanse",
+        "waluty",
+        "bezplatne",
+        "bez-klucza"
+      ],
       "representativeQueries": [
         "jaki jest dzisiejszy kurs EUR",
         "kurs USD z ostatnich 10 dni"
       ],
-      "metadata": { "auth": "brak", "format": "REST/JSON+XML", "instytucja": "Narodowy Bank Polski" },
+      "metadata": {
+        "auth": "brak",
+        "format": "REST/JSON+XML",
+        "instytucja": "Narodowy Bank Polski"
+      },
       "updatedAt": "2026-07-18",
       "en": {
         "displayName": "Exchange rates and gold prices — NBP API",
@@ -147,12 +202,20 @@
       "jurisdiction": "PL",
       "url": "https://api.stat.gov.pl/Home/BdlApi",
       "description": "Największa polska baza danych statystycznych (gospodarka, społeczeństwo, środowisko) w podziale terytorialnym. REST, JSON/XML/JSONAPI. Bez klucza, opcjonalny nagłówek X-ClientId dla wyższych limitów.",
-      "tags": ["dane-statystyczne", "otwarte-dane", "bezplatne"],
+      "tags": [
+        "dane-statystyczne",
+        "otwarte-dane",
+        "bezplatne"
+      ],
       "representativeQueries": [
         "ile mieszkańców ma dana gmina według GUS",
         "dane statystyczne dla powiatu"
       ],
-      "metadata": { "auth": "brak (opcjonalny klucz X-ClientId)", "format": "REST/JSON", "instytucja": "GUS" },
+      "metadata": {
+        "auth": "brak (opcjonalny klucz X-ClientId)",
+        "format": "REST/JSON",
+        "instytucja": "GUS"
+      },
       "updatedAt": "2026-07-18",
       "en": {
         "displayName": "Local Data Bank (BDL) — GUS API",
@@ -171,12 +234,21 @@
       "jurisdiction": "PL",
       "url": "https://api.dane.gov.pl/doc",
       "description": "Centralny portal otwartych danych administracji publicznej — tysiące zbiorów danych z ministerstw i urzędów, jednolite REST API. Bez klucza.",
-      "tags": ["otwarte-dane", "dane-statystyczne", "bezplatne", "bez-klucza"],
+      "tags": [
+        "otwarte-dane",
+        "dane-statystyczne",
+        "bezplatne",
+        "bez-klucza"
+      ],
       "representativeQueries": [
         "znajdź zbiór danych o jakości powietrza",
         "wyszukaj otwarte dane danego ministerstwa"
       ],
-      "metadata": { "auth": "brak", "format": "REST/JSON", "instytucja": "Kancelaria Prezesa Rady Ministrów" },
+      "metadata": {
+        "auth": "brak",
+        "format": "REST/JSON",
+        "instytucja": "Kancelaria Prezesa Rady Ministrów"
+      },
       "updatedAt": "2026-07-18",
       "en": {
         "displayName": "Open Data — api.dane.gov.pl",
@@ -194,12 +266,21 @@
       "jurisdiction": "PL",
       "url": "https://danepubliczne.imgw.pl/apiinfo",
       "description": "Bieżące i archiwalne dane synoptyczne, hydrologiczne i ostrzeżenia meteorologiczne Instytutu Meteorologii i Gospodarki Wodnej. REST, JSON/XML/CSV, bez klucza.",
-      "tags": ["pogoda", "dane-przestrzenne", "bezplatne", "bez-klucza"],
+      "tags": [
+        "pogoda",
+        "dane-przestrzenne",
+        "bezplatne",
+        "bez-klucza"
+      ],
       "representativeQueries": [
         "jaka jest aktualna temperatura na danej stacji synoptycznej",
         "stan wody na rzece"
       ],
-      "metadata": { "auth": "brak", "format": "REST/JSON+XML+CSV", "instytucja": "IMGW-PIB" },
+      "metadata": {
+        "auth": "brak",
+        "format": "REST/JSON+XML+CSV",
+        "instytucja": "IMGW-PIB"
+      },
       "updatedAt": "2026-07-18",
       "en": {
         "displayName": "IMGW-PIB public data (weather and hydrology)",
@@ -217,12 +298,20 @@
       "jurisdiction": "PL",
       "url": "https://api.um.warszawa.pl/",
       "description": "Dane miejskie Warszawy w czasie rzeczywistym: pozycje autobusów i tramwajów, parkingi P+R, stacje rowerów miejskich, jakość powietrza. Wymaga bezpłatnej rejestracji i klucza.",
-      "tags": ["dane-miejskie", "transport", "wymaga-klucza"],
+      "tags": [
+        "dane-miejskie",
+        "transport",
+        "wymaga-klucza"
+      ],
       "representativeQueries": [
         "gdzie jest wolne miejsce na parkingu P+R w Warszawie",
         "pozycja tramwaju na żywo"
       ],
-      "metadata": { "auth": "klucz (bezpłatna rejestracja)", "format": "REST/JSON", "zasieg": "Warszawa" },
+      "metadata": {
+        "auth": "klucz (bezpłatna rejestracja)",
+        "format": "REST/JSON",
+        "zasieg": "Warszawa"
+      },
       "updatedAt": "2026-07-18",
       "en": {
         "displayName": "Warsaw open data — api.um.warszawa.pl",
@@ -241,11 +330,20 @@
       "jurisdiction": "PL",
       "url": "https://ezamowienia.gov.pl/pl/integracja/",
       "description": "Oficjalne API Urzędu Zamówień Publicznych do pobierania ogłoszeń i planów postępowań o zamówienia publiczne. Wysoki próg wejścia: formalna rejestracja, OAuth2 Client Credentials, wymagany raport z testów integracyjnych.",
-      "tags": ["zamowienia-publiczne", "rejestr-publiczny", "wymaga-rejestracji", "oauth2"],
+      "tags": [
+        "zamowienia-publiczne",
+        "rejestr-publiczny",
+        "wymaga-rejestracji",
+        "oauth2"
+      ],
       "representativeQueries": [
         "znajdź aktualne przetargi publiczne w danej kategorii"
       ],
-      "metadata": { "auth": "OAuth2 Client Credentials + formalna procedura dostępu", "format": "REST/JSON", "instytucja": "Urząd Zamówień Publicznych" },
+      "metadata": {
+        "auth": "OAuth2 Client Credentials + formalna procedura dostępu",
+        "format": "REST/JSON",
+        "instytucja": "Urząd Zamówień Publicznych"
+      },
       "updatedAt": "2026-07-18",
       "en": {
         "displayName": "e-Zamówienia Platform — public procurement API",
@@ -262,20 +360,33 @@
       "type": "application/mcp-server+json",
       "jurisdiction": "PL",
       "url": "https://skanfirmy.pl/mcp",
-      "description": "Bezstanowy serwer MCP (JSON-RPC 2.0 przez Streamable HTTP) z 6 narzędziami do weryfikacji polskich firm: status VAT, dane z KRS, rachunek bankowy na Białej Liście, mikrorachunek podatkowy, kody PKD 2025, odsetki ustawowe/handlowe. Łączy dane z Wykazu VAT (MF), KRS (MS) i GUS w jednym wywołaniu. Bez klucza. Dostępne też jako zwykłe REST GET: skanfirmy.pl/nip/{numer} i skanfirmy.pl/vies/{kraj}/{numer}.",
-      "tags": ["firmy", "rejestr-publiczny", "mcp", "bezplatne", "bez-klucza", "flagowy"],
+      "description": "Bezstanowy serwer MCP (JSON-RPC 2.0 przez Streamable HTTP) z 9 narzędziami do weryfikacji polskich firm: status VAT, zbiorcze sprawdzenie listy do 30 NIP-ów, rejestr REGON (GUS, obejmuje też JDG), dane z KRS, rachunek bankowy na Białej Liście, mikrorachunek podatkowy, kody PKD 2025, odsetki ustawowe/handlowe, przeszukiwanie katalogu otwarteAPI. Łączy dane z Wykazu VAT (MF), KRS (MS) i GUS w jednym wywołaniu. Bez klucza. Dostępne też jako zwykłe REST GET: skanfirmy.pl/nip/{numer}, skanfirmy.pl/regon/{numer} i skanfirmy.pl/vies/{kraj}/{numer}.",
+      "tags": [
+        "firmy",
+        "rejestr-publiczny",
+        "mcp",
+        "bezplatne",
+        "bez-klucza",
+        "flagowy"
+      ],
       "representativeQueries": [
         "sprawdź NIP kontrahenta",
+        "sprawdź zbiorczo listę wielu NIP-ów naraz",
         "zweryfikuj rachunek bankowy na białej liście VAT",
         "wygeneruj mikrorachunek podatkowy z NIP"
       ],
-      "metadata": { "auth": "brak", "protokol": "MCP 2025-06-18, JSON-RPC 2.0", "narzedzia": 6 },
-      "updatedAt": "2026-07-18",
+      "metadata": {
+        "auth": "brak",
+        "protokol": "MCP 2025-06-18, JSON-RPC 2.0",
+        "narzedzia": 8
+      },
+      "updatedAt": "2026-08-03",
       "en": {
         "displayName": "skanfirmy.pl — MCP server for company verification",
-        "description": "Stateless MCP server (JSON-RPC 2.0 over Streamable HTTP) with 6 tools to verify Polish companies: VAT status, KRS data, White List bank account, tax micro-account, 2025 PKD codes, statutory/commercial interest. Combines data from the VAT Register (Ministry of Finance), KRS (Ministry of Justice) and GUS in one call. No key required. Also available as plain REST GET: skanfirmy.pl/nip/{number} and skanfirmy.pl/vies/{country}/{number}.",
+        "description": "Stateless MCP server (JSON-RPC 2.0 over Streamable HTTP) with 9 tools to verify Polish companies: VAT status, bulk lookup of up to 30 tax IDs in one call, REGON register (GUS, sole traders too), KRS data, White List bank account, tax micro-account, 2025 PKD codes, statutory/commercial interest, otwarteAPI catalog search. Combines data from the VAT Register (Ministry of Finance), KRS (Ministry of Justice) and GUS in one call. No key required. Also available as plain REST GET: skanfirmy.pl/nip/{number}, skanfirmy.pl/regon/{number} and skanfirmy.pl/vies/{country}/{number}.",
         "representativeQueries": [
           "check a counterparty's tax ID",
+          "bulk check a list of many Polish tax IDs at once",
           "verify a bank account on the VAT White List",
           "generate a tax micro-account from a tax ID"
         ]
@@ -288,12 +399,22 @@
       "jurisdiction": "EU",
       "url": "https://data.ecb.europa.eu/help/api/overview",
       "description": "Dane statystyczne EBC: referencyjne kursy euro, stopy procentowe, inflacja, agregaty monetarne strefy euro. Standard SDMX 2.1, wyniki w XML/JSON/CSV. Bez klucza.",
-      "tags": ["finanse", "waluty", "dane-statystyczne", "bezplatne", "bez-klucza"],
+      "tags": [
+        "finanse",
+        "waluty",
+        "dane-statystyczne",
+        "bezplatne",
+        "bez-klucza"
+      ],
       "representativeQueries": [
         "jaka jest aktualna referencyjna stopa procentowa EBC",
         "historyczny kurs euro do dolara wg EBC"
       ],
-      "metadata": { "auth": "brak", "format": "REST/SDMX (JSON/XML/CSV)", "instytucja": "Europejski Bank Centralny" },
+      "metadata": {
+        "auth": "brak",
+        "format": "REST/SDMX (JSON/XML/CSV)",
+        "instytucja": "Europejski Bank Centralny"
+      },
       "updatedAt": "2026-07-19",
       "en": {
         "displayName": "European Central Bank — SDMX 2.1 RESTful (Statistical Data Warehouse)",
@@ -311,12 +432,21 @@
       "jurisdiction": "EU",
       "url": "https://ec.europa.eu/eurostat/web/user-guides/data-browser/api-data-access/api-introduction",
       "description": "Oficjalne statystyki wszystkich krajów UE (gospodarka, demografia, rynek pracy, środowisko) w jednym REST API zgodnym z SDMX. Bez klucza.",
-      "tags": ["dane-statystyczne", "otwarte-dane", "bezplatne", "bez-klucza"],
+      "tags": [
+        "dane-statystyczne",
+        "otwarte-dane",
+        "bezplatne",
+        "bez-klucza"
+      ],
       "representativeQueries": [
         "stopa bezrobocia w krajach Unii Europejskiej",
         "porównaj PKB per capita w krajach UE"
       ],
-      "metadata": { "auth": "brak", "format": "REST/SDMX (JSON/CSV/XML)", "instytucja": "Eurostat / Komisja Europejska" },
+      "metadata": {
+        "auth": "brak",
+        "format": "REST/SDMX (JSON/CSV/XML)",
+        "instytucja": "Eurostat / Komisja Europejska"
+      },
       "updatedAt": "2026-07-19",
       "en": {
         "displayName": "Eurostat — REST API for EU statistics",
@@ -334,12 +464,22 @@
       "jurisdiction": "EU",
       "url": "https://eur-lex.europa.eu/content/help/data-reuse/webservice.html",
       "description": "Pełny tekst i metadane wszystkich aktów prawnych UE (rozporządzenia, dyrektywy, wyroki TSUE) jako dane RDF, dostępne przez SPARQL i REST. Bez klucza, limit 5 równoległych zapytań, timeout 60 s.",
-      "tags": ["prawo", "rejestr-publiczny", "bezplatne", "bez-klucza"],
+      "tags": [
+        "prawo",
+        "rejestr-publiczny",
+        "bezplatne",
+        "bez-klucza"
+      ],
       "representativeQueries": [
         "znajdź dyrektywę UE o danym numerze",
         "wyszukaj wyroki Trybunału Sprawiedliwości UE w danej sprawie"
       ],
-      "metadata": { "auth": "brak", "format": "SPARQL/REST (RDF)", "limit": "5 równoległych zapytań, timeout 60s", "instytucja": "Urząd Publikacji Unii Europejskiej" },
+      "metadata": {
+        "auth": "brak",
+        "format": "SPARQL/REST (RDF)",
+        "limit": "5 równoległych zapytań, timeout 60s",
+        "instytucja": "Urząd Publikacji Unii Europejskiej"
+      },
       "updatedAt": "2026-07-19",
       "en": {
         "displayName": "EUR-Lex / CELLAR — EU legal acts",
@@ -357,12 +497,21 @@
       "jurisdiction": "EU",
       "url": "https://data.europa.eu/en/which-apis-are-available-and-where-can-i-find-information-about-them",
       "description": "Centralny katalog otwartych danych ze wszystkich krajów UE i instytucji unijnych — setki tysięcy zbiorów danych. Search API (REST) i SPARQL nad pełnymi metadanymi RDF. Bez klucza.",
-      "tags": ["otwarte-dane", "dane-statystyczne", "bezplatne", "bez-klucza"],
+      "tags": [
+        "otwarte-dane",
+        "dane-statystyczne",
+        "bezplatne",
+        "bez-klucza"
+      ],
       "representativeQueries": [
         "znajdź zbiory danych o jakości powietrza we wszystkich krajach UE",
         "wyszukaj otwarte dane danej instytucji unijnej"
       ],
-      "metadata": { "auth": "brak", "format": "REST Search API + SPARQL", "instytucja": "Komisja Europejska" },
+      "metadata": {
+        "auth": "brak",
+        "format": "REST Search API + SPARQL",
+        "instytucja": "Komisja Europejska"
+      },
       "updatedAt": "2026-07-19",
       "en": {
         "displayName": "data.europa.eu — the European open data portal",
@@ -380,12 +529,21 @@
       "jurisdiction": "DE",
       "url": "https://www.destatis.de/EN/Service/OpenData/api-webservice.html",
       "description": "REST/JSON API niemieckiego Federalnego Urzędu Statystycznego (Destatis) do bazy GENESIS-Online — dane gospodarcze, demograficzne i społeczne Niemiec. Bez klucza, bez rejestracji.",
-      "tags": ["dane-statystyczne", "otwarte-dane", "bezplatne", "bez-klucza"],
+      "tags": [
+        "dane-statystyczne",
+        "otwarte-dane",
+        "bezplatne",
+        "bez-klucza"
+      ],
       "representativeQueries": [
         "liczba ludności Niemiec według landu",
         "dane gospodarcze Niemiec z GENESIS-Online"
       ],
-      "metadata": { "auth": "brak", "format": "REST/JSON", "instytucja": "Statistisches Bundesamt (Destatis)" },
+      "metadata": {
+        "auth": "brak",
+        "format": "REST/JSON",
+        "instytucja": "Statistisches Bundesamt (Destatis)"
+      },
       "updatedAt": "2026-07-18",
       "en": {
         "displayName": "GENESIS-Online — Federal Statistical Office (Germany)",
@@ -403,12 +561,20 @@
       "jurisdiction": "FR",
       "url": "https://portail-api.insee.fr/catalog/api/2ba0e549-5587-3ef1-9082-99cd865de66f",
       "description": "Oficjalne API francuskiego rejestru przedsiębiorstw i placówek Sirene (SIREN/SIRET), prowadzonego przez INSEE. Bezpłatne, wymaga rejestracji konta i uwierzytelnienia OAuth2, limit 30 zapytań/min.",
-      "tags": ["firmy", "rejestr-publiczny", "wymaga-klucza"],
+      "tags": [
+        "firmy",
+        "rejestr-publiczny",
+        "wymaga-klucza"
+      ],
       "representativeQueries": [
         "sprawdź dane firmy francuskiej po numerze SIREN",
         "wyszukaj przedsiębiorstwa we Francji po nazwie"
       ],
-      "metadata": { "auth": "OAuth2 (bezpłatna rejestracja), limit 30/min", "format": "REST/JSON", "instytucja": "INSEE" },
+      "metadata": {
+        "auth": "OAuth2 (bezpłatna rejestracja), limit 30/min",
+        "format": "REST/JSON",
+        "instytucja": "INSEE"
+      },
       "updatedAt": "2026-07-18",
       "en": {
         "displayName": "Sirene API — INSEE (France)",
@@ -418,6 +584,1127 @@
           "search French businesses by name"
         ],
         "authLabel": "OAuth2 (free registration), limit 30/min"
+      }
+    },
+    {
+      "identifier": "urn:air:otwarteapi.pl:api:ares",
+      "displayName": "ARES — Administrativní registr ekonomických subjektů (Czechy)",
+      "type": "application/json",
+      "jurisdiction": "CZ",
+      "url": "https://ares.gov.cz/stranky/vyvojar-info",
+      "description": "Oficjalny rejestr czeskich podmiotów gospodarczych (odpowiednik REGON/CEIDG), prowadzony przez czeskie Ministerstwo Finansów. REST/JSON, dane po numerze IČO (czeski odpowiednik REGON). Bez klucza, otwarty CORS.",
+      "tags": [
+        "firmy",
+        "rejestr-publiczny",
+        "bezplatne",
+        "bez-klucza"
+      ],
+      "representativeQueries": [
+        "sprawdź dane czeskiej firmy po numerze IČO",
+        "wyszukaj czeski podmiot gospodarczy po nazwie"
+      ],
+      "metadata": {
+        "auth": "brak",
+        "format": "REST/JSON",
+        "instytucja": "Ministerstwo Finansów Republiki Czeskiej"
+      },
+      "updatedAt": "2026-07-20",
+      "en": {
+        "displayName": "ARES — Register of Economic Subjects (Czech Republic)",
+        "description": "Official registry of Czech economic entities (Czech equivalent of REGON/CEIDG), run by the Czech Ministry of Finance. REST/JSON, data by IČO number (Czech equivalent of a business ID). No key required, open CORS.",
+        "representativeQueries": [
+          "check a Czech company's data by IČO number",
+          "search Czech economic entities by name"
+        ]
+      }
+    },
+    {
+      "identifier": "urn:air:otwarteapi.pl:api:cbs-statline",
+      "displayName": "CBS StatLine Open Data — urząd statystyczny Holandii",
+      "type": "application/json",
+      "jurisdiction": "NL",
+      "url": "https://www.cbs.nl/en-gb/our-services/open-data",
+      "description": "OData REST API holenderskiego urzędu statystycznego (CBS) do bazy StatLine — dane gospodarcze, demograficzne i społeczne Holandii w tysiącach tabel. Bez klucza, otwarty CORS.",
+      "tags": [
+        "dane-statystyczne",
+        "otwarte-dane",
+        "bezplatne",
+        "bez-klucza"
+      ],
+      "representativeQueries": [
+        "liczba ludności Holandii według roku",
+        "dane gospodarcze Holandii z CBS StatLine"
+      ],
+      "metadata": {
+        "auth": "brak",
+        "format": "OData (JSON)",
+        "instytucja": "Centraal Bureau voor de Statistiek (CBS)"
+      },
+      "updatedAt": "2026-07-20",
+      "en": {
+        "displayName": "CBS StatLine Open Data — Statistics Netherlands",
+        "description": "OData REST API of the Dutch statistical office (CBS) for the StatLine database — the Netherlands' economic, demographic and social data across thousands of tables. No key required, open CORS.",
+        "representativeQueries": [
+          "Netherlands population by year",
+          "Dutch economic data from CBS StatLine"
+        ]
+      }
+    },
+    {
+      "identifier": "urn:air:otwarteapi.pl:api:ine-tempus3",
+      "displayName": "INE Tempus3 — Instituto Nacional de Estadística (Hiszpania)",
+      "type": "application/json",
+      "jurisdiction": "ES",
+      "url": "https://www.ine.es/dyngs/DAB/index.htm?cid=1099",
+      "description": "REST API hiszpańskiego urzędu statystycznego (INE) do bazy Tempus3 — pełna baza oficjalnych statystyk Hiszpanii (demografia, gospodarka, rynek pracy, ceny). Zwraca JSON, bez klucza, otwarty CORS.",
+      "tags": [
+        "dane-statystyczne",
+        "otwarte-dane",
+        "bezplatne",
+        "bez-klucza"
+      ],
+      "representativeQueries": [
+        "liczba ludności Hiszpanii według roku",
+        "dane gospodarcze Hiszpanii z INE"
+      ],
+      "metadata": {
+        "auth": "brak",
+        "format": "REST/JSON",
+        "instytucja": "Instituto Nacional de Estadística (INE)"
+      },
+      "updatedAt": "2026-07-20",
+      "en": {
+        "displayName": "INE Tempus3 — National Statistics Institute (Spain)",
+        "description": "REST API of Spain's National Statistics Institute (INE) for the Tempus3 database — Spain's full official statistics (demographics, economy, labour market, prices). Returns JSON, no key required, open CORS.",
+        "representativeQueries": [
+          "Spain population by year",
+          "Spanish economic data from INE"
+        ]
+      }
+    },
+    {
+      "identifier": "urn:air:otwarteapi.pl:api:brreg-enhetsregisteret",
+      "displayName": "Enhetsregisteret — Norweski Rejestr Podmiotów (Brønnøysund)",
+      "type": "application/json",
+      "jurisdiction": "NO",
+      "url": "https://data.brreg.no/enhetsregisteret/api/docs/index.html",
+      "description": "Oficjalny rejestr wszystkich norweskich podmiotów (firm, organizacji, jednostek publicznych), prowadzony przez Brønnøysundregistrene. Dane po numerze organizacyjnym (organisasjonsnummer). Bez klucza.",
+      "tags": [
+        "firmy",
+        "rejestr-publiczny",
+        "bezplatne",
+        "bez-klucza"
+      ],
+      "representativeQueries": [
+        "sprawdź dane norweskiej firmy po numerze organizacyjnym",
+        "wyszukaj norweski podmiot po nazwie"
+      ],
+      "metadata": {
+        "auth": "brak",
+        "format": "REST/JSON",
+        "instytucja": "Brønnøysundregistrene"
+      },
+      "updatedAt": "2026-08-14",
+      "en": {
+        "displayName": "Enhetsregisteret — Norwegian entity registry (Brønnøysund)",
+        "description": "Official registry of all Norwegian entities (companies, organisations, public bodies), run by Brønnøysundregistrene. Data by organisation number (organisasjonsnummer). No key required.",
+        "representativeQueries": [
+          "check a Norwegian company's data by organisation number",
+          "search Norwegian entities by name"
+        ]
+      }
+    },
+    {
+      "identifier": "urn:air:otwarteapi.pl:api:prh-ytj",
+      "displayName": "YTJ / PRH avoindata — Fiński Rejestr Handlowy",
+      "type": "application/json",
+      "jurisdiction": "FI",
+      "url": "https://avoindata.prh.fi/ytj_en.html",
+      "description": "Oficjalny fiński rejestr przedsiębiorstw (YTJ), udostępniany jako otwarte dane przez PRH (Fiński Urząd Patentów i Rejestracji). Dane po numerze Business ID (Y-tunnus). Bez klucza.",
+      "tags": [
+        "firmy",
+        "rejestr-publiczny",
+        "bezplatne",
+        "bez-klucza"
+      ],
+      "representativeQueries": [
+        "sprawdź dane fińskiej firmy po Business ID",
+        "wyszukaj fiński podmiot po nazwie"
+      ],
+      "metadata": {
+        "auth": "brak",
+        "format": "REST/JSON",
+        "instytucja": "PRH (Patentti- ja rekisterihallitus)"
+      },
+      "updatedAt": "2026-08-14",
+      "en": {
+        "displayName": "YTJ / PRH avoindata — Finnish business register",
+        "description": "Official Finnish business register (YTJ), published as open data by PRH (Finnish Patent and Registration Office). Data by Business ID (Y-tunnus). No key required.",
+        "representativeQueries": [
+          "check a Finnish company's data by Business ID",
+          "search Finnish entities by name"
+        ]
+      }
+    },
+    {
+      "identifier": "urn:air:otwarteapi.pl:api:rik-ariregister",
+      "displayName": "e-Business Register (Ariregister) — Estoński Rejestr Handlowy (RIK)",
+      "type": "application/json",
+      "jurisdiction": "EE",
+      "url": "https://www.rik.ee/en/e-business-register/open-data",
+      "description": "Oficjalny estoński rejestr handlowy (Ariregister / e-Business Register), prowadzony przez Centrum Rejestrów i Systemów Informacyjnych (RIK). Dane spółek po kodzie rejestrowym lub nazwie. Bez klucza.",
+      "tags": [
+        "firmy",
+        "rejestr-publiczny",
+        "bezplatne",
+        "bez-klucza"
+      ],
+      "representativeQueries": [
+        "sprawdź dane estońskiej firmy po kodzie rejestrowym",
+        "wyszukaj estoński podmiot po nazwie"
+      ],
+      "metadata": {
+        "auth": "brak",
+        "format": "REST/JSON",
+        "instytucja": "RIK (Registrite ja Infosüsteemide Keskus)"
+      },
+      "updatedAt": "2026-08-14",
+      "en": {
+        "displayName": "e-Business Register (Ariregister) — Estonian business register (RIK)",
+        "description": "Official Estonian business register (Ariregister / e-Business Register), run by the Centre of Registers and Information Systems (RIK). Company data by registry code or name. No key required.",
+        "representativeQueries": [
+          "check an Estonian company's data by registry code",
+          "search Estonian entities by name"
+        ]
+      }
+    },
+    {
+      "identifier": "urn:air:otwarteapi.pl:api:gleif-lei",
+      "displayName": "GLEIF — globalny rejestr identyfikatorów podmiotów prawnych (LEI)",
+      "type": "application/json",
+      "jurisdiction": "INT",
+      "url": "https://www.gleif.org/en/lei-data/gleif-api",
+      "description": "Globalny rejestr identyfikatorów podmiotów prawnych (Legal Entity Identifier, LEI), prowadzony przez GLEIF. Jeden identyfikator LEI opisuje podmiot prawny niezależnie od kraju. Dane po kodzie LEI lub nazwie. Bez klucza.",
+      "tags": [
+        "firmy",
+        "rejestr-publiczny",
+        "bezplatne",
+        "bez-klucza"
+      ],
+      "representativeQueries": [
+        "sprawdź podmiot po globalnym kodzie LEI",
+        "wyszukaj identyfikator LEI firmy po nazwie"
+      ],
+      "metadata": {
+        "auth": "brak",
+        "format": "REST/JSON",
+        "instytucja": "GLEIF"
+      },
+      "updatedAt": "2026-08-14",
+      "en": {
+        "displayName": "GLEIF — global Legal Entity Identifier (LEI) registry",
+        "description": "Global registry of Legal Entity Identifiers (LEI), maintained by GLEIF. A single LEI identifies a legal entity across borders. Data by LEI code or name. No key required.",
+        "representativeQueries": [
+          "look up an entity by its global LEI code",
+          "search a company's LEI by name"
+        ]
+      }
+    },
+    {
+      "identifier": "urn:air:otwarteapi.pl:api:sec-edgar",
+      "displayName": "SEC EDGAR — rejestr zgłoszeń spółek publicznych USA",
+      "type": "application/json",
+      "jurisdiction": "US",
+      "url": "https://www.sec.gov/edgar/sec-api-documentation",
+      "description": "Oficjalne dane amerykańskiej Komisji Papierów Wartościowych (U.S. Securities and Exchange Commission) z systemu EDGAR — zgłoszenia i dane finansowe spółek notowanych w USA, po numerze CIK. Bez klucza (API wymaga nagłówka User-Agent).",
+      "tags": [
+        "firmy",
+        "rejestr-publiczny",
+        "bezplatne",
+        "bez-klucza"
+      ],
+      "representativeQueries": [
+        "pobierz zgłoszenia spółki publicznej USA po numerze CIK",
+        "sprawdź dane finansowe amerykańskiej spółki z EDGAR"
+      ],
+      "metadata": {
+        "auth": "brak (wymagany User-Agent)",
+        "format": "REST/JSON",
+        "instytucja": "U.S. Securities and Exchange Commission"
+      },
+      "updatedAt": "2026-08-14",
+      "en": {
+        "displayName": "SEC EDGAR — U.S. public company filings",
+        "description": "Official data from the U.S. Securities and Exchange Commission (SEC) EDGAR system — filings and financial data for U.S.-listed public companies, by CIK number. No key (the API requires a User-Agent header).",
+        "representativeQueries": [
+          "fetch a U.S. public company's filings by CIK number",
+          "check a U.S. company's financial data from EDGAR"
+        ]
+      }
+    },
+    {
+      "identifier": "urn:air:otwarteapi.pl:api:data-gov-au",
+      "displayName": "data.gov.au — portal otwartych danych rządu Australii",
+      "type": "application/json",
+      "jurisdiction": "AU",
+      "url": "https://data.gov.au/api",
+      "description": "Centralny portal otwartych danych rządu Australii, oparty na CKAN. Ponad 140 tysięcy zbiorów danych z instytucji federalnych, stanowych i lokalnych. REST/JSON, bez klucza.",
+      "tags": [
+        "otwarte-dane",
+        "bezplatne",
+        "bez-klucza"
+      ],
+      "representativeQueries": [
+        "wyszukaj australijskie zbiory danych po słowie kluczowym",
+        "pobierz metadane zbioru z data.gov.au"
+      ],
+      "metadata": {
+        "auth": "brak",
+        "format": "REST/JSON (CKAN)",
+        "instytucja": "Rząd Australii"
+      },
+      "updatedAt": "2026-08-14",
+      "en": {
+        "displayName": "data.gov.au — Australian Government open data portal",
+        "description": "Australia's central government open-data portal, built on CKAN. Over 140,000 datasets from federal, state and local bodies. REST/JSON, no key.",
+        "representativeQueries": [
+          "search Australian datasets by keyword",
+          "fetch a dataset's metadata from data.gov.au"
+        ]
+      }
+    },
+    {
+      "identifier": "urn:air:otwarteapi.pl:api:data-gov-sg",
+      "displayName": "data.gov.sg — portal otwartych danych rządu Singapuru",
+      "type": "application/json",
+      "jurisdiction": "SG",
+      "url": "https://guide.data.gov.sg/developer-guide/dataset-apis",
+      "description": "Oficjalny portal otwartych danych rządu Singapuru (Open Data API v2). Zbiory z agencji rządowych — gospodarka, transport, środowisko, demografia. REST/JSON, bez klucza.",
+      "tags": [
+        "otwarte-dane",
+        "bezplatne",
+        "bez-klucza"
+      ],
+      "representativeQueries": [
+        "pobierz listę zbiorów danych rządu Singapuru",
+        "sprawdź zbiór danych z data.gov.sg"
+      ],
+      "metadata": {
+        "auth": "brak",
+        "format": "REST/JSON",
+        "instytucja": "Rząd Singapuru (GovTech)"
+      },
+      "updatedAt": "2026-08-14",
+      "en": {
+        "displayName": "data.gov.sg — Singapore Government open data portal",
+        "description": "Singapore's official government open-data portal (Open Data API v2). Datasets from government agencies — economy, transport, environment, demographics. REST/JSON, no key.",
+        "representativeQueries": [
+          "list Singapore Government datasets",
+          "fetch a dataset from data.gov.sg"
+        ]
+      }
+    },
+    {
+      "identifier": "urn:air:otwarteapi.pl:api:data-gov-il",
+      "displayName": "data.gov.il — portal otwartych danych rządu Izraela",
+      "type": "application/json",
+      "jurisdiction": "IL",
+      "url": "https://data.gov.il/",
+      "description": "Centralny portal otwartych danych rządu Izraela, oparty na CKAN. Tysiące zbiorów danych z instytucji rządowych, w tym dane rejestru spółek (ICA). REST/JSON, bez klucza.",
+      "tags": [
+        "otwarte-dane",
+        "bezplatne",
+        "bez-klucza"
+      ],
+      "representativeQueries": [
+        "wyszukaj izraelskie zbiory danych po słowie kluczowym",
+        "sprawdź dane rejestru spółek Izraela"
+      ],
+      "metadata": {
+        "auth": "brak",
+        "format": "REST/JSON (CKAN)",
+        "instytucja": "Rząd Izraela"
+      },
+      "updatedAt": "2026-08-14",
+      "en": {
+        "displayName": "data.gov.il — Israel Government open data portal",
+        "description": "Israel's central government open-data portal, built on CKAN. Thousands of datasets from government bodies, including company-registry (ICA) data. REST/JSON, no key.",
+        "representativeQueries": [
+          "search Israeli datasets by keyword",
+          "look up Israeli company-registry data"
+        ]
+      }
+    },
+    {
+      "identifier": "urn:air:otwarteapi.pl:api:open-canada",
+      "displayName": "Open Government Canada — portal otwartych danych rządu Kanady",
+      "type": "application/json",
+      "jurisdiction": "CA",
+      "url": "https://open.canada.ca/en/access-our-application-programming-interface-api",
+      "description": "Centralny portal otwartych danych rządu Kanady (open.canada.ca), oparty na CKAN. Największy rządowy portal danych Ameryki Północnej poza USA. REST/JSON, bez klucza.",
+      "tags": [
+        "otwarte-dane",
+        "bezplatne",
+        "bez-klucza"
+      ],
+      "representativeQueries": [
+        "wyszukaj kanadyjskie zbiory danych po słowie kluczowym",
+        "pobierz metadane zbioru z open.canada.ca"
+      ],
+      "metadata": {
+        "auth": "brak",
+        "format": "REST/JSON (CKAN)",
+        "instytucja": "Rząd Kanady"
+      },
+      "updatedAt": "2026-08-14",
+      "en": {
+        "displayName": "Open Government Canada — Canadian Government open data portal",
+        "description": "Canada's central government open-data portal (open.canada.ca), built on CKAN. The largest North American government data portal outside the USA. REST/JSON, no key.",
+        "representativeQueries": [
+          "search Canadian datasets by keyword",
+          "fetch a dataset's metadata from open.canada.ca"
+        ]
+      }
+    },
+    {
+      "identifier": "urn:air:otwarteapi.pl:api:worldbank",
+      "displayName": "World Bank Open Data — globalne wskaźniki rozwoju",
+      "type": "application/json",
+      "jurisdiction": "INT",
+      "url": "https://datahelpdesk.worldbank.org/knowledgebase/articles/889392",
+      "description": "Otwarte dane Banku Światowego — tysiące wskaźników rozwoju dla wszystkich krajów świata (PKB, demografia, ubóstwo, edukacja). REST/JSON, bez klucza.",
+      "tags": [
+        "dane-statystyczne",
+        "otwarte-dane",
+        "bezplatne",
+        "bez-klucza"
+      ],
+      "representativeQueries": [
+        "pobierz wskaźnik rozwoju dla kraju z Banku Światowego",
+        "porównaj PKB krajów przez API World Bank"
+      ],
+      "metadata": {
+        "auth": "brak",
+        "format": "REST/JSON",
+        "instytucja": "Bank Światowy"
+      },
+      "updatedAt": "2026-08-14",
+      "en": {
+        "displayName": "World Bank Open Data — global development indicators",
+        "description": "World Bank open data — thousands of development indicators for every country in the world (GDP, demographics, poverty, education). REST/JSON, no key.",
+        "representativeQueries": [
+          "fetch a development indicator for a country from the World Bank",
+          "compare countries' GDP via the World Bank API"
+        ]
+      }
+    },
+    {
+      "identifier": "urn:air:otwarteapi.pl:api:data-gov-my",
+      "displayName": "data.gov.my — portal otwartych danych rządu Malezji",
+      "type": "application/json",
+      "jurisdiction": "MY",
+      "url": "https://developer.data.gov.my/",
+      "description": "Oficjalny portal otwartych danych rządu Malezji, prowadzony przez Department of Statistics Malaysia (projekt OpenDOSM). Nowoczesne, keyless REST API. Dane w JSON.",
+      "tags": [
+        "dane-statystyczne",
+        "otwarte-dane",
+        "bezplatne",
+        "bez-klucza"
+      ],
+      "representativeQueries": [
+        "pobierz malezyjski zbiór danych po identyfikatorze",
+        "sprawdź dane statystyczne Malezji"
+      ],
+      "metadata": {
+        "auth": "brak",
+        "format": "REST/JSON",
+        "instytucja": "Department of Statistics Malaysia (OpenDOSM)"
+      },
+      "updatedAt": "2026-08-14",
+      "en": {
+        "displayName": "data.gov.my — Malaysia Government open data portal",
+        "description": "Malaysia's official government open-data portal, run by the Department of Statistics Malaysia (OpenDOSM). A modern, keyless REST API. Data in JSON.",
+        "representativeQueries": [
+          "fetch a Malaysian dataset by identifier",
+          "look up Malaysian statistics"
+        ]
+      }
+    },
+    {
+      "identifier": "urn:air:otwarteapi.pl:api:datos-gob-cl",
+      "displayName": "datos.gob.cl — portal otwartych danych rządu Chile",
+      "type": "application/json",
+      "jurisdiction": "CL",
+      "url": "https://datos.gob.cl/",
+      "description": "Portal otwartych danych rządu Chile, oparty na CKAN. Zbiory z instytucji publicznych. REST/JSON, bez klucza.",
+      "tags": [
+        "otwarte-dane",
+        "bezplatne",
+        "bez-klucza"
+      ],
+      "representativeQueries": [
+        "wyszukaj chilijskie zbiory danych po słowie kluczowym",
+        "pobierz zbiór z datos.gob.cl"
+      ],
+      "metadata": {
+        "auth": "brak",
+        "format": "REST/JSON (CKAN)",
+        "instytucja": "Rząd Chile"
+      },
+      "updatedAt": "2026-08-14",
+      "en": {
+        "displayName": "datos.gob.cl — Chile Government open data portal",
+        "description": "Chile's government open-data portal, built on CKAN. Datasets from public institutions. REST/JSON, no key.",
+        "representativeQueries": [
+          "search Chilean datasets by keyword",
+          "fetch a dataset from datos.gob.cl"
+        ]
+      }
+    },
+    {
+      "identifier": "urn:air:otwarteapi.pl:api:datos-gov-co",
+      "displayName": "datos.gov.co — portal otwartych danych rządu Kolumbii",
+      "type": "application/json",
+      "jurisdiction": "CO",
+      "url": "https://www.datos.gov.co/",
+      "description": "Portal otwartych danych rządu Kolumbii, oparty na platformie Socrata (SODA). Tysiące zbiorów z instytucji publicznych. REST/JSON, bez klucza.",
+      "tags": [
+        "otwarte-dane",
+        "bezplatne",
+        "bez-klucza"
+      ],
+      "representativeQueries": [
+        "wyszukaj kolumbijskie zbiory danych",
+        "pobierz metadane zbioru z datos.gov.co"
+      ],
+      "metadata": {
+        "auth": "brak",
+        "format": "REST/JSON (Socrata)",
+        "instytucja": "Rząd Kolumbii"
+      },
+      "updatedAt": "2026-08-14",
+      "en": {
+        "displayName": "datos.gov.co — Colombia Government open data portal",
+        "description": "Colombia's government open-data portal, built on the Socrata (SODA) platform. Thousands of datasets from public institutions. REST/JSON, no key.",
+        "representativeQueries": [
+          "search Colombian datasets",
+          "fetch a dataset's metadata from datos.gov.co"
+        ]
+      }
+    },
+    {
+      "identifier": "urn:air:otwarteapi.pl:api:ibge",
+      "displayName": "IBGE Serviços de Dados — statystyka Brazylii",
+      "type": "application/json",
+      "jurisdiction": "BR",
+      "url": "https://servicodados.ibge.gov.br/api/docs",
+      "description": "Keyless REST API brazylijskiego urzędu statystycznego IBGE (odpowiednik GUS) — dane statystyczne, terytorialne i demograficzne Brazylii. JSON, bez klucza.",
+      "tags": [
+        "dane-statystyczne",
+        "otwarte-dane",
+        "bezplatne",
+        "bez-klucza"
+      ],
+      "representativeQueries": [
+        "pobierz podział terytorialny Brazylii z IBGE",
+        "sprawdź dane statystyczne Brazylii"
+      ],
+      "metadata": {
+        "auth": "brak",
+        "format": "REST/JSON",
+        "instytucja": "IBGE"
+      },
+      "updatedAt": "2026-08-14",
+      "en": {
+        "displayName": "IBGE data services — Brazil statistics",
+        "description": "Keyless REST API of Brazil's statistics office IBGE (equivalent of Poland's GUS) — statistical, territorial and demographic data. JSON, no key.",
+        "representativeQueries": [
+          "fetch Brazil's territorial divisions from IBGE",
+          "look up Brazilian statistics"
+        ]
+      }
+    },
+    {
+      "identifier": "urn:air:otwarteapi.pl:api:us-federal-register",
+      "displayName": "US Federal Register — dziennik urzędowy rządu USA",
+      "type": "application/json",
+      "jurisdiction": "US",
+      "url": "https://www.federalregister.gov/developers/documentation/api/v1",
+      "description": "Keyless REST API dziennika urzędowego rządu federalnego USA (Federal Register) — rozporządzenia, obwieszczenia i akty wykonawcze wraz z metadanymi. JSON, bez klucza.",
+      "tags": [
+        "prawo",
+        "otwarte-dane",
+        "bezplatne",
+        "bez-klucza"
+      ],
+      "representativeQueries": [
+        "pobierz najnowsze akty Rejestru Federalnego USA",
+        "wyszukaj regulacje federalne USA po agencji"
+      ],
+      "metadata": {
+        "auth": "brak",
+        "format": "REST/JSON",
+        "instytucja": "U.S. Office of the Federal Register"
+      },
+      "updatedAt": "2026-08-14",
+      "en": {
+        "displayName": "US Federal Register — U.S. government daily journal",
+        "description": "Keyless REST API of the U.S. Federal Register — the daily journal of the U.S. federal government — rules, notices and executive actions with metadata. JSON, no key.",
+        "representativeQueries": [
+          "fetch the latest U.S. Federal Register documents",
+          "search U.S. federal rules by agency"
+        ]
+      }
+    },
+    {
+      "identifier": "urn:air:otwarteapi.pl:api:usaspending",
+      "displayName": "USAspending.gov — wydatki rządu federalnego USA",
+      "type": "application/json",
+      "jurisdiction": "US",
+      "url": "https://api.usaspending.gov/",
+      "description": "Keyless REST API o wydatkach rządu federalnego USA — kontrakty, granty i budżety agencji. Popularne w OSINT i compliance. JSON, bez klucza.",
+      "tags": [
+        "finanse",
+        "otwarte-dane",
+        "bezplatne",
+        "bez-klucza"
+      ],
+      "representativeQueries": [
+        "pobierz listę agencji federalnych USA z budżetami",
+        "sprawdź kontrakty rządu USA przez API"
+      ],
+      "metadata": {
+        "auth": "brak",
+        "format": "REST/JSON",
+        "instytucja": "U.S. Department of the Treasury"
+      },
+      "updatedAt": "2026-08-14",
+      "en": {
+        "displayName": "USAspending.gov — U.S. federal spending",
+        "description": "Keyless REST API of U.S. federal spending — contracts, grants and agency budgets. Popular in OSINT and compliance. JSON, no key.",
+        "representativeQueries": [
+          "fetch U.S. federal agencies and their budgets",
+          "look up U.S. government contracts via API"
+        ]
+      }
+    },
+    {
+      "identifier": "urn:air:otwarteapi.pl:api:data-gov-hk",
+      "displayName": "data.gov.hk — portal otwartych danych rządu Hongkongu",
+      "type": "application/json",
+      "jurisdiction": "HK",
+      "url": "https://data.gov.hk/en/help/api-spec",
+      "description": "Oficjalny portal otwartych danych rządu Hongkongu, oparty na CKAN. Zbiory z instytucji publicznych. REST/JSON, bez klucza.",
+      "tags": [
+        "otwarte-dane",
+        "bezplatne",
+        "bez-klucza"
+      ],
+      "representativeQueries": [
+        "wyszukaj zbiory danych rządu Hongkongu",
+        "pobierz metadane zbioru z data.gov.hk"
+      ],
+      "metadata": {
+        "auth": "brak",
+        "format": "REST/JSON (CKAN)",
+        "instytucja": "Rząd Hongkongu (OGCIO)"
+      },
+      "updatedAt": "2026-08-14",
+      "en": {
+        "displayName": "data.gov.hk — Hong Kong Government open data portal",
+        "description": "Hong Kong's official government open-data portal, built on CKAN. Datasets from public institutions. REST/JSON, no key.",
+        "representativeQueries": [
+          "search Hong Kong Government datasets",
+          "fetch a dataset's metadata from data.gov.hk"
+        ]
+      }
+    },
+    {
+      "identifier": "urn:air:otwarteapi.pl:api:datos-gob-ar",
+      "displayName": "datos.gob.ar — portal otwartych danych rządu Argentyny",
+      "type": "application/json",
+      "jurisdiction": "AR",
+      "url": "https://datos.gob.ar/",
+      "description": "Portal otwartych danych rządu Argentyny, oparty na CKAN. Zbiory z instytucji publicznych. REST/JSON, bez klucza.",
+      "tags": [
+        "otwarte-dane",
+        "bezplatne",
+        "bez-klucza"
+      ],
+      "representativeQueries": [
+        "wyszukaj argentyńskie zbiory danych",
+        "pobierz metadane zbioru z datos.gob.ar"
+      ],
+      "metadata": {
+        "auth": "brak",
+        "format": "REST/JSON (CKAN)",
+        "instytucja": "Rząd Argentyny"
+      },
+      "updatedAt": "2026-08-14",
+      "en": {
+        "displayName": "datos.gob.ar — Argentina Government open data portal",
+        "description": "Argentina's government open-data portal, built on CKAN. Datasets from public institutions. REST/JSON, no key.",
+        "representativeQueries": [
+          "search Argentine datasets",
+          "fetch a dataset's metadata from datos.gob.ar"
+        ]
+      }
+    },
+    {
+      "identifier": "urn:air:otwarteapi.pl:api:uznemumu-registrs",
+      "displayName": "Uzņēmumu reģistrs — Łotewski Rejestr Przedsiębiorstw (data.gov.lv)",
+      "type": "application/json",
+      "jurisdiction": "LV",
+      "url": "https://data.gov.lv/",
+      "description": "Łotewski Rejestr Przedsiębiorstw (Uzņēmumu reģistrs) udostępniany jako otwarte dane przez portal data.gov.lv (CKAN). To łotewski odpowiednik KRS. REST/JSON, bez klucza.",
+      "tags": [
+        "firmy",
+        "rejestr-publiczny",
+        "bezplatne",
+        "bez-klucza"
+      ],
+      "representativeQueries": [
+        "sprawdź dane łotewskiej firmy w rejestrze",
+        "pobierz zbiór rejestru firm Łotwy z data.gov.lv"
+      ],
+      "metadata": {
+        "auth": "brak",
+        "format": "REST/JSON (CKAN)",
+        "instytucja": "Uzņēmumu reģistrs (Łotwa)"
+      },
+      "updatedAt": "2026-08-14",
+      "en": {
+        "displayName": "Uzņēmumu reģistrs — Latvian Register of Enterprises (data.gov.lv)",
+        "description": "Latvia's Register of Enterprises (Uzņēmumu reģistrs) published as open data via the data.gov.lv portal (CKAN). The Latvian equivalent of the KRS. REST/JSON, no key.",
+        "representativeQueries": [
+          "look up a Latvian company in the register",
+          "fetch Latvia's company-register dataset from data.gov.lv"
+        ]
+      }
+    },
+    {
+      "identifier": "urn:air:otwarteapi.pl:api:gcis-taiwan",
+      "displayName": "GCIS OpenData — Rejestr Firm Tajwanu (MOEA)",
+      "type": "application/json",
+      "jurisdiction": "TW",
+      "url": "https://data.gcis.nat.gov.tw/main/index",
+      "description": "Oficjalny rejestr wszystkich tajwańskich spółek, prowadzony przez GCIS (Ministerstwo Gospodarki Tajwanu, MOEA). Dane po numerze rejestrowym firmy. REST/JSON, bez klucza.",
+      "tags": [
+        "firmy",
+        "rejestr-publiczny",
+        "bezplatne",
+        "bez-klucza"
+      ],
+      "representativeQueries": [
+        "sprawdź dane tajwańskiej firmy po numerze rejestrowym",
+        "wyszukaj tajwański podmiot w rejestrze GCIS"
+      ],
+      "metadata": {
+        "auth": "brak",
+        "format": "REST/JSON",
+        "instytucja": "GCIS / MOEA (Tajwan)"
+      },
+      "updatedAt": "2026-08-14",
+      "en": {
+        "displayName": "GCIS OpenData — Taiwan company register (MOEA)",
+        "description": "The official register of all Taiwanese companies, run by GCIS (Taiwan's Ministry of Economic Affairs, MOEA). Data by company registration number. REST/JSON, no key.",
+        "representativeQueries": [
+          "look up a Taiwanese company by registration number",
+          "search a Taiwanese entity in the GCIS register"
+        ]
+      }
+    },
+    {
+      "identifier": "urn:air:otwarteapi.pl:api:companies-house",
+      "displayName": "Companies House — brytyjski rejestr spółek",
+      "type": "application/json",
+      "jurisdiction": "GB",
+      "url": "https://developer.company-information.service.gov.uk/",
+      "description": "Oficjalny rejestr wszystkich brytyjskich spółek (Companies House). Dane po numerze spółki. Wymaga darmowego klucza API.",
+      "tags": [
+        "firmy",
+        "rejestr-publiczny",
+        "bezplatne",
+        "wymaga-klucza"
+      ],
+      "representativeQueries": [
+        "sprawdź dane brytyjskiej spółki po numerze Companies House",
+        "check a UK company's data by Companies House number"
+      ],
+      "metadata": {
+        "auth": "darmowy klucz",
+        "format": "REST/JSON",
+        "instytucja": "UK Companies House"
+      },
+      "updatedAt": "2026-08-14",
+      "en": {
+        "displayName": "Companies House — UK company register",
+        "description": "The official register of all UK companies (Companies House). Data by company number. Requires a free API key.",
+        "representativeQueries": [
+          "wyszukaj brytyjską spółkę po nazwie",
+          "search a UK company by name"
+        ],
+        "authLabel": "free key"
+      }
+    },
+    {
+      "identifier": "urn:air:otwarteapi.pl:api:gbizinfo",
+      "displayName": "gBizINFO — japoński rejestr informacji o firmach",
+      "type": "application/json",
+      "jurisdiction": "JP",
+      "url": "https://info.gbiz.go.jp/hojin/",
+      "description": "Rządowy rejestr informacji o japońskich firmach (gBizINFO), prowadzony przez METI. Dane powiązane z numerem korporacyjnym. Wymaga darmowego tokenu.",
+      "tags": [
+        "firmy",
+        "rejestr-publiczny",
+        "bezplatne",
+        "wymaga-klucza"
+      ],
+      "representativeQueries": [
+        "sprawdź informacje o japońskiej firmie w gBizINFO",
+        "look up Japanese corporate information in gBizINFO"
+      ],
+      "metadata": {
+        "auth": "darmowy klucz",
+        "format": "REST/JSON",
+        "instytucja": "METI (gBizINFO)"
+      },
+      "updatedAt": "2026-08-14",
+      "en": {
+        "displayName": "gBizINFO — Japanese corporate information",
+        "description": "A government register of Japanese corporate information (gBizINFO), run by METI. Data linked to the corporate number. Requires a free token.",
+        "representativeQueries": [
+          "pobierz dane firmy po japońskim numerze korporacyjnym",
+          "fetch company data by Japanese corporate number"
+        ],
+        "authLabel": "free key"
+      }
+    },
+    {
+      "identifier": "urn:air:otwarteapi.pl:api:houjin-bangou",
+      "displayName": "Houjin Bangou — japoński rejestr numerów korporacyjnych",
+      "type": "application/json",
+      "jurisdiction": "JP",
+      "url": "https://www.houjin-bangou.nta.go.jp/webapi/",
+      "description": "Oficjalny rejestr numerów korporacyjnych (Houjin Bangou) wszystkich japońskich podmiotów, prowadzony przez Krajową Agencję Podatkową (NTA). Wymaga darmowego identyfikatora.",
+      "tags": [
+        "firmy",
+        "rejestr-publiczny",
+        "bezplatne",
+        "wymaga-klucza"
+      ],
+      "representativeQueries": [
+        "sprawdź japoński podmiot po numerze korporacyjnym",
+        "look up a Japanese entity by corporate number"
+      ],
+      "metadata": {
+        "auth": "darmowy klucz",
+        "format": "REST/JSON",
+        "instytucja": "NTA (Krajowa Agencja Podatkowa Japonii)"
+      },
+      "updatedAt": "2026-08-14",
+      "en": {
+        "displayName": "Houjin Bangou — Japanese Corporate Number register",
+        "description": "The official Corporate Number (Houjin Bangou) register of all Japanese entities, run by the National Tax Agency (NTA). Requires a free application ID.",
+        "representativeQueries": [
+          "wyszukaj japońską firmę po nazwie w rejestrze NTA",
+          "search a Japanese company by name in the NTA register"
+        ],
+        "authLabel": "free key"
+      }
+    },
+    {
+      "identifier": "urn:air:otwarteapi.pl:api:nzbn",
+      "displayName": "NZBN — rejestr firm Nowej Zelandii",
+      "type": "application/json",
+      "jurisdiction": "NZ",
+      "url": "https://api.business.govt.nz/gateway/nzbn/",
+      "description": "Oficjalny rejestr wszystkich podmiotów gospodarczych Nowej Zelandii (NZBN), prowadzony przez MBIE. Dane po numerze NZBN. Wymaga darmowego klucza API.",
+      "tags": [
+        "firmy",
+        "rejestr-publiczny",
+        "bezplatne",
+        "wymaga-klucza"
+      ],
+      "representativeQueries": [
+        "sprawdź nowozelandzką firmę po numerze NZBN",
+        "check a New Zealand business by NZBN"
+      ],
+      "metadata": {
+        "auth": "darmowy klucz",
+        "format": "REST/JSON",
+        "instytucja": "MBIE (Nowa Zelandia)"
+      },
+      "updatedAt": "2026-08-14",
+      "en": {
+        "displayName": "NZBN — New Zealand business register",
+        "description": "The official register of all New Zealand businesses (NZBN), run by MBIE. Data by NZBN number. Requires a free API key.",
+        "representativeQueries": [
+          "wyszukaj podmiot z Nowej Zelandii po nazwie",
+          "search a New Zealand entity by name"
+        ],
+        "authLabel": "free key"
+      }
+    },
+    {
+      "identifier": "urn:air:otwarteapi.pl:api:abn-lookup",
+      "displayName": "ABN Lookup — australijski rejestr firm (ABR)",
+      "type": "application/json",
+      "jurisdiction": "AU",
+      "url": "https://abr.business.gov.au/Documentation/WebServiceIntroduction",
+      "description": "Oficjalny rejestr australijskich firm (ABN Lookup), część Australian Business Register. Dane po numerze ABN. Wymaga darmowego identyfikatora (GUID).",
+      "tags": [
+        "firmy",
+        "rejestr-publiczny",
+        "bezplatne",
+        "wymaga-klucza"
+      ],
+      "representativeQueries": [
+        "sprawdź australijską firmę po numerze ABN",
+        "check an Australian business by ABN"
+      ],
+      "metadata": {
+        "auth": "darmowy klucz",
+        "format": "REST/JSON",
+        "instytucja": "Australian Business Register (ABR)"
+      },
+      "updatedAt": "2026-08-14",
+      "en": {
+        "displayName": "ABN Lookup — Australian business register (ABR)",
+        "description": "Australia's official business register (ABN Lookup), part of the Australian Business Register. Data by ABN number. Requires a free identifier (GUID).",
+        "representativeQueries": [
+          "potwierdź status rejestracji kontrahenta z Australii",
+          "confirm an Australian counterparty's registration status"
+        ],
+        "authLabel": "free key"
+      }
+    },
+    {
+      "identifier": "urn:air:otwarteapi.pl:api:kvk",
+      "displayName": "KVK — holenderska Izba Handlowa (Handelsregister)",
+      "type": "application/json",
+      "jurisdiction": "NL",
+      "url": "https://developers.kvk.nl/",
+      "description": "Oficjalny holenderski rejestr handlowy (Handelsregister), prowadzony przez Izbę Handlową KVK. Dane firm po numerze KVK. Wymaga rejestracji i klucza (środowisko testowe bezpłatne, produkcja płatna za zapytanie).",
+      "tags": [
+        "firmy",
+        "rejestr-publiczny",
+        "bezplatne",
+        "wymaga-klucza"
+      ],
+      "representativeQueries": [
+        "sprawdź holenderską firmę po numerze KVK",
+        "check a Dutch company by KVK number"
+      ],
+      "metadata": {
+        "auth": "rejestracja",
+        "format": "REST/JSON",
+        "instytucja": "KVK (Kamer van Koophandel)"
+      },
+      "updatedAt": "2026-08-14",
+      "en": {
+        "displayName": "KVK — Dutch Chamber of Commerce (Trade Register)",
+        "description": "The official Dutch trade register (Handelsregister), run by the KVK Chamber of Commerce. Company data by KVK number. Requires registration and a key (test environment free, production paid per call).",
+        "representativeQueries": [
+          "wyszukaj holenderski podmiot w Handelsregister",
+          "search a Dutch entity in the Trade Register"
+        ],
+        "authLabel": "registration"
+      }
+    },
+    {
+      "identifier": "urn:air:otwarteapi.pl:api:cro-ireland",
+      "displayName": "CRO — irlandzki rejestr spółek (OpenServices)",
+      "type": "application/json",
+      "jurisdiction": "IE",
+      "url": "https://services.cro.ie/",
+      "description": "Oficjalny rejestr irlandzkich spółek (Companies Registration Office), udostępniany przez CRO OpenServices. Dane po numerze spółki. Wymaga darmowej rejestracji.",
+      "tags": [
+        "firmy",
+        "rejestr-publiczny",
+        "bezplatne",
+        "wymaga-klucza"
+      ],
+      "representativeQueries": [
+        "sprawdź irlandzką spółkę po numerze CRO",
+        "check an Irish company by CRO number"
+      ],
+      "metadata": {
+        "auth": "rejestracja",
+        "format": "REST/JSON",
+        "instytucja": "CRO (Companies Registration Office)"
+      },
+      "updatedAt": "2026-08-14",
+      "en": {
+        "displayName": "CRO — Irish company register (OpenServices)",
+        "description": "Ireland's official company register (Companies Registration Office), exposed via CRO OpenServices. Data by company number. Requires free registration.",
+        "representativeQueries": [
+          "wyszukaj irlandzką firmę po nazwie",
+          "search an Irish company by name"
+        ],
+        "authLabel": "registration"
+      }
+    },
+    {
+      "identifier": "urn:air:otwarteapi.pl:api:cvr-denmark",
+      "displayName": "CVR — duński Centralny Rejestr Firm (Virk)",
+      "type": "application/json",
+      "jurisdiction": "DK",
+      "url": "https://datacvr.virk.dk/artikel/system-til-system-adgang-til-cvr-data",
+      "description": "Oficjalny duński Centralny Rejestr Firm (CVR), udostępniany przez portal Virk. Dane po numerze CVR. Wymaga bezpłatnej rejestracji dostępu systemowego (przyznawanej przez Erhvervsstyrelsen).",
+      "tags": [
+        "firmy",
+        "rejestr-publiczny",
+        "bezplatne",
+        "wymaga-klucza"
+      ],
+      "representativeQueries": [
+        "sprawdź duńską firmę po numerze CVR",
+        "check a Danish company by CVR number"
+      ],
+      "metadata": {
+        "auth": "rejestracja",
+        "format": "REST/JSON",
+        "instytucja": "Erhvervsstyrelsen (Dania)"
+      },
+      "updatedAt": "2026-08-14",
+      "en": {
+        "displayName": "CVR — Danish Central Business Register (Virk)",
+        "description": "Denmark's official Central Business Register (CVR), exposed via the Virk portal. Data by CVR number. Requires free system-access registration (granted by the Danish Business Authority).",
+        "representativeQueries": [
+          "wyszukaj duński podmiot w rejestrze CVR",
+          "search a Danish entity in the CVR register"
+        ],
+        "authLabel": "registration"
+      }
+    },
+    {
+      "identifier": "urn:air:otwarteapi.pl:api:zefix",
+      "displayName": "Zefix — szwajcarski centralny rejestr firm",
+      "type": "application/json",
+      "jurisdiction": "CH",
+      "url": "https://www.zefix.admin.ch/",
+      "description": "Oficjalny szwajcarski centralny indeks firm (Zefix), łączący kantonalne rejestry handlowe. API PublicREST zwraca dane po numerze IDE/UID lub nazwie. Wymaga bezpłatnego konta.",
+      "tags": [
+        "firmy",
+        "rejestr-publiczny",
+        "bezplatne",
+        "wymaga-klucza"
+      ],
+      "representativeQueries": [
+        "sprawdź szwajcarską firmę po numerze IDE/UID",
+        "check a Swiss company by IDE/UID number"
+      ],
+      "metadata": {
+        "auth": "rejestracja",
+        "format": "REST/JSON",
+        "instytucja": "Zefix (Szwajcaria)"
+      },
+      "updatedAt": "2026-08-14",
+      "en": {
+        "displayName": "Zefix — Swiss central business index",
+        "description": "Switzerland's official central business index (Zefix), linking the cantonal commercial registers. The PublicREST API returns data by IDE/UID number or name. Requires a free account.",
+        "representativeQueries": [
+          "wyszukaj szwajcarski podmiot po nazwie w Zefix",
+          "search a Swiss entity by name in Zefix"
+        ],
+        "authLabel": "registration"
+      }
+    },
+    {
+      "identifier": "urn:air:otwarteapi.pl:api:data-gov-in",
+      "displayName": "data.gov.in — portal otwartych danych rządu Indii",
+      "type": "application/json",
+      "jurisdiction": "IN",
+      "url": "https://data.gov.in/help/how-use-datasets-apis",
+      "description": "Oficjalny portal otwartych danych rządu Indii (Open Government Data Platform India). Tysiące zbiorów z ministerstw i instytucji. Wymaga darmowego klucza API.",
+      "tags": [
+        "otwarte-dane",
+        "bezplatne",
+        "wymaga-klucza"
+      ],
+      "representativeQueries": [
+        "pobierz indyjski zbiór danych po identyfikatorze zasobu",
+        "fetch an Indian dataset by resource identifier"
+      ],
+      "metadata": {
+        "auth": "darmowy klucz",
+        "format": "REST/JSON",
+        "instytucja": "Rząd Indii"
+      },
+      "updatedAt": "2026-08-14",
+      "en": {
+        "displayName": "data.gov.in — India Government open data portal",
+        "description": "India's official open-data portal (Open Government Data Platform India). Thousands of datasets from ministries and agencies. Requires a free API key.",
+        "representativeQueries": [
+          "wyszukaj dane rządu Indii na data.gov.in",
+          "search Indian Government data on data.gov.in"
+        ],
+        "authLabel": "free key"
+      }
+    },
+    {
+      "identifier": "urn:air:otwarteapi.pl:api:data-go-kr",
+      "displayName": "data.go.kr — portal danych publicznych Korei Płd.",
+      "type": "application/json",
+      "jurisdiction": "KR",
+      "url": "https://www.data.go.kr/",
+      "description": "Oficjalny portal danych publicznych rządu Korei Południowej. Tysiące API i zbiorów z instytucji publicznych. Wymaga darmowego klucza, przyznawanego per usługa po rejestracji.",
+      "tags": [
+        "otwarte-dane",
+        "bezplatne",
+        "wymaga-klucza"
+      ],
+      "representativeQueries": [
+        "pobierz koreański zbiór danych publicznych po kluczu usługi",
+        "fetch a Korean public dataset by service key"
+      ],
+      "metadata": {
+        "auth": "darmowy klucz",
+        "format": "REST/JSON",
+        "instytucja": "Rząd Korei Południowej"
+      },
+      "updatedAt": "2026-08-14",
+      "en": {
+        "displayName": "data.go.kr — South Korea public data portal",
+        "description": "South Korea's official public data portal. Thousands of APIs and datasets from public institutions. Requires a free key, granted per service after registration.",
+        "representativeQueries": [
+          "wyszukaj usługę API na data.go.kr",
+          "search an API service on data.go.kr"
+        ],
+        "authLabel": "free key"
+      }
+    },
+    {
+      "identifier": "urn:air:otwarteapi.pl:api:us-census",
+      "displayName": "US Census Bureau — statystyka USA",
+      "type": "application/json",
+      "jurisdiction": "US",
+      "url": "https://www.census.gov/data/developers/data-sets.html",
+      "description": "Amerykański urząd statystyczny (U.S. Census Bureau) — odpowiednik GUS. REST API udostępnia dane demograficzne i gospodarcze USA (spis powszechny, ACS, dane biznesowe). Wymaga darmowego klucza API.",
+      "tags": [
+        "dane-statystyczne",
+        "bezplatne",
+        "wymaga-klucza"
+      ],
+      "representativeQueries": [
+        "pobierz dane demograficzne USA z Census Bureau",
+        "fetch U.S. demographic data from the Census Bureau"
+      ],
+      "metadata": {
+        "auth": "darmowy klucz",
+        "format": "REST/JSON",
+        "instytucja": "U.S. Census Bureau"
+      },
+      "updatedAt": "2026-08-14",
+      "en": {
+        "displayName": "US Census Bureau — U.S. statistics",
+        "description": "The U.S. Census Bureau — the American equivalent of Poland's GUS. Its REST API exposes U.S. demographic and economic data (the census, ACS, business data). Requires a free API key.",
+        "representativeQueries": [
+          "sprawdź statystyki ekonomiczne USA po obszarze",
+          "look up U.S. economic statistics by area"
+        ],
+        "authLabel": "free key"
       }
     }
   ]
