@@ -3,7 +3,11 @@
   "host": {
     "displayName": "otwarteAPI.pl",
     "identifier": "otwarteapi.pl",
-    "documentationUrl": "https://otwarteapi.pl/llms.txt"
+    "documentationUrl": "https://otwarteapi.pl/llms.txt",
+    "endpoints": {
+      "search": "https://otwarteapi.pl/search",
+      "mcp": "https://otwarteapi.pl/mcp"
+    }
   },
   "entries": [
     {
