@@ -1,0 +1,33 @@
+name: Link check
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 6 * * 1" # Mondays 06:00 UTC
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  linkChecker:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Link Checker
+        id: lychee
+        # Checks the catalog URLs (ai-catalog.json) and the README. 403 is
+        # accepted because many government APIs answer bots with 403 while the
+        # endpoint is perfectly alive — only genuine 404 / dead DNS should flag.
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: "--no-progress --max-retries 2 --timeout 20 --accept 200,206,301,302,307,403,429 --exclude-mail README.md ai-catalog.json"
+          fail: false
+      - name: Create issue on broken links
+        if: steps.lychee.outputs.exit_code != 0
+        uses: peter-evans/create-issue-from-file@v5
+        with:
+          title: "Link checker — broken catalog links found"
+          content-filepath: ./lychee/out.md
+          labels: automated, links
