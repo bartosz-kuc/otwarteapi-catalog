@@ -755,7 +755,7 @@
       "displayName": "e-Business Register (Ariregister) — Estoński Rejestr Handlowy (RIK)",
       "type": "application/json",
       "jurisdiction": "EE",
-      "url": "https://www.rik.ee/en/e-business-register/open-data",
+      "url": "https://avaandmed.ariregister.rik.ee/en",
       "description": "Oficjalny estoński rejestr handlowy (Ariregister / e-Business Register), prowadzony przez Centrum Rejestrów i Systemów Informacyjnych (RIK). Dane spółek po kodzie rejestrowym lub nazwie. Bez klucza.",
       "tags": [
         "firmy",
@@ -851,7 +851,7 @@
       "displayName": "data.gov.au — portal otwartych danych rządu Australii",
       "type": "application/json",
       "jurisdiction": "AU",
-      "url": "https://data.gov.au/api",
+      "url": "https://data.gov.au/",
       "description": "Centralny portal otwartych danych rządu Australii, oparty na CKAN. Ponad 140 tysięcy zbiorów danych z instytucji federalnych, stanowych i lokalnych. REST/JSON, bez klucza.",
       "tags": [
         "otwarte-dane",
@@ -1356,7 +1356,7 @@
       "displayName": "gBizINFO — japoński rejestr informacji o firmach",
       "type": "application/json",
       "jurisdiction": "JP",
-      "url": "https://info.gbiz.go.jp/hojin/",
+      "url": "https://content.info.gbiz.go.jp/api/index.html",
       "description": "Rządowy rejestr informacji o japońskich firmach (gBizINFO), prowadzony przez METI. Dane powiązane z numerem korporacyjnym. Wymaga darmowego tokenu.",
       "tags": [
         "firmy",
@@ -1422,7 +1422,7 @@
       "displayName": "NZBN — rejestr firm Nowej Zelandii",
       "type": "application/json",
       "jurisdiction": "NZ",
-      "url": "https://api.business.govt.nz/gateway/nzbn/",
+      "url": "https://portal.api.business.govt.nz/api/nzbn",
       "description": "Oficjalny rejestr wszystkich podmiotów gospodarczych Nowej Zelandii (NZBN), prowadzony przez MBIE. Dane po numerze NZBN. Wymaga darmowego klucza API.",
       "tags": [
         "firmy",
@@ -1455,7 +1455,7 @@
       "displayName": "ABN Lookup — australijski rejestr firm (ABR)",
       "type": "application/json",
       "jurisdiction": "AU",
-      "url": "https://abr.business.gov.au/Documentation/WebServiceIntroduction",
+      "url": "https://abr.business.gov.au/Tools/WebServices",
       "description": "Oficjalny rejestr australijskich firm (ABN Lookup), część Australian Business Register. Dane po numerze ABN. Wymaga darmowego identyfikatora (GUID).",
       "tags": [
         "firmy",
@@ -1709,6 +1709,234 @@
           "look up U.S. economic statistics by area"
         ],
         "authLabel": "free key"
+      }
+    },
+    {
+      "identifier": "urn:air:otwarteapi.pl:api:borme-es",
+      "displayName": "BORME — hiszpański rejestr handlowy (BOE)",
+      "type": "application/json",
+      "jurisdiction": "ES",
+      "url": "https://www.boe.es/datosabiertos/",
+      "description": "Boletín Oficial del Registro Mercantil (BORME) to oficjalny dziennik hiszpańskiego rejestru handlowego, wydawany przez agencję BOE. API otwartych danych zwraca dzienne wykazy zdarzeń rejestrowych — zawiązania spółek, zmiany kapitału, powołania i wykreślenia. Bez klucza.",
+      "tags": [
+        "firmy",
+        "rejestr-publiczny",
+        "bezplatne",
+        "bez-klucza"
+      ],
+      "representativeQueries": [
+        "pobierz dzienny wykaz BORME z wpisami hiszpańskich spółek",
+        "get the daily BORME gazette of Spanish company events"
+      ],
+      "metadata": {
+        "auth": "brak",
+        "format": "REST/JSON",
+        "instytucja": "Agencia Estatal BOE (Hiszpania)"
+      },
+      "updatedAt": "2026-08-24",
+      "en": {
+        "displayName": "BORME — Spanish commercial register (BOE)",
+        "description": "The Boletín Oficial del Registro Mercantil (BORME) is the official gazette of the Spanish commercial register, published by the BOE agency. The open-data API returns daily lists of registry events — company incorporations, capital changes, appointments and dissolutions. No key required.",
+        "representativeQueries": [
+          "śledź zmiany kapitału i władz spółek w hiszpańskim rejestrze handlowym",
+          "track Spanish company capital and board changes from the commercial register"
+        ]
+      }
+    },
+    {
+      "identifier": "urn:air:otwarteapi.pl:api:rpo-sk",
+      "displayName": "RPO — słowacki Rejestr Osób Prawnych",
+      "type": "application/json",
+      "jurisdiction": "SK",
+      "url": "https://www.statistics.sk/",
+      "description": "Register právnických osôb (RPO) to oficjalny słowacki rejestr osób prawnych, prowadzony przez Urząd Statystyczny Republiki Słowackiej. Publiczne API zwraca dane firmy po numerze IČO lub nazwie — nazwę (z historią zmian), adres, formę prawną, organy statutowe i status. Bez klucza.",
+      "tags": [
+        "firmy",
+        "rejestr-publiczny",
+        "bezplatne",
+        "bez-klucza"
+      ],
+      "representativeQueries": [
+        "sprawdź słowacką firmę po numerze IČO",
+        "look up a Slovak company by IČO number"
+      ],
+      "metadata": {
+        "auth": "brak",
+        "format": "REST/JSON",
+        "instytucja": "Štatistický úrad SR (Słowacja)"
+      },
+      "updatedAt": "2026-08-24",
+      "en": {
+        "displayName": "RPO — Slovak Register of Legal Entities",
+        "description": "The Register právnických osôb (RPO) is Slovakia's official register of legal entities, maintained by the Statistical Office of the Slovak Republic. The public API returns a company's data by IČO number or name — name (with change history), address, legal form, statutory bodies and status. No key required.",
+        "representativeQueries": [
+          "wyszukaj słowacki podmiot po nazwie w RPO",
+          "search a Slovak legal entity by name in RPO"
+        ]
+      }
+    },
+    {
+      "identifier": "urn:air:otwarteapi.pl:api:jar-lt",
+      "displayName": "JAR — litewski Rejestr Osób Prawnych",
+      "type": "application/json",
+      "jurisdiction": "LT",
+      "url": "https://www.registrucentras.lt/",
+      "description": "Juridinių asmenų registras (JAR) to litewski rejestr osób prawnych prowadzony przez Registrų centras, udostępniany przez krajowy portal otwartych danych data.gov.lt (API Spinta). Zwraca dane podmiotu po kodzie (ja_kodas) — nazwę, adres, datę rejestracji, formę prawną i status. Bez klucza.",
+      "tags": [
+        "firmy",
+        "rejestr-publiczny",
+        "bezplatne",
+        "bez-klucza"
+      ],
+      "representativeQueries": [
+        "sprawdź litewską firmę po kodzie podmiotu (ja_kodas)",
+        "look up a Lithuanian company by entity code (ja_kodas)"
+      ],
+      "metadata": {
+        "auth": "brak",
+        "format": "REST/JSON",
+        "instytucja": "Registrų centras (Litwa)"
+      },
+      "updatedAt": "2026-08-24",
+      "en": {
+        "displayName": "JAR — Lithuanian Register of Legal Entities",
+        "description": "The Juridinių asmenų registras (JAR) is Lithuania's register of legal entities, maintained by Registrų centras and served through the national open-data portal data.gov.lt (Spinta API). It returns an entity's data by code (ja_kodas) — name, address, registration date, legal form and status. No key required.",
+        "representativeQueries": [
+          "przefiltruj litewskie podmioty po formie prawnej lub dacie rejestracji",
+          "filter Lithuanian entities by legal form or registration date"
+        ]
+      }
+    },
+    {
+      "identifier": "urn:air:otwarteapi.pl:api:fred-us",
+      "displayName": "FRED — dane ekonomiczne Rezerwy Federalnej (St. Louis)",
+      "type": "application/json",
+      "jurisdiction": "US",
+      "url": "https://fred.stlouisfed.org/",
+      "description": "FRED (Federal Reserve Economic Data) — serwis Banku Rezerwy Federalnej w St. Louis z setkami tysięcy szeregów czasowych danych ekonomicznych USA i świata. REST API w formacie JSON, wymaga bezpłatnego klucza.",
+      "tags": [
+        "statystyka",
+        "ekonomia",
+        "bezplatne",
+        "wymaga-klucza"
+      ],
+      "representativeQueries": [
+        "pobierz szereg czasowy PKB USA (GDPC1) z FRED",
+        "fetch the US GDP time series (GDPC1) from FRED"
+      ],
+      "metadata": {
+        "auth": "darmowy klucz",
+        "format": "REST/JSON",
+        "instytucja": "Federal Reserve Bank of St. Louis (USA)"
+      },
+      "updatedAt": "2026-08-24",
+      "en": {
+        "displayName": "FRED — Federal Reserve economic data (St. Louis)",
+        "description": "FRED (Federal Reserve Economic Data) — a Federal Reserve Bank of St. Louis service with hundreds of thousands of US and global economic time series. REST API in JSON; requires a free key.",
+        "representativeQueries": [
+          "sprawdź inflację CPI USA (CPIAUCSL) w FRED",
+          "look up US CPI inflation (CPIAUCSL) in FRED"
+        ],
+        "authLabel": "free key"
+      }
+    },
+    {
+      "identifier": "urn:air:otwarteapi.pl:api:ajpes-prs-si",
+      "displayName": "AJPES PRS — słoweński rejestr firm (Poslovni register Slovenije)",
+      "type": "application/json",
+      "jurisdiction": "SI",
+      "url": "https://www.ajpes.si/",
+      "description": "Słoweński rejestr firm PRS (Poslovni register Slovenije) prowadzony przez AJPES. Publiczne API REST (dokumentacja Swagger) zwraca dane podmiotu po numerze rejestrowym lub nazwie. Wymaga bezpłatnej rejestracji.",
+      "tags": [
+        "firmy",
+        "rejestr-publiczny",
+        "bezplatne",
+        "wymaga-klucza"
+      ],
+      "representativeQueries": [
+        "wyszukaj słoweńską firmę w rejestrze PRS (AJPES)",
+        "search a Slovenian company in the PRS register (AJPES)"
+      ],
+      "metadata": {
+        "auth": "rejestracja",
+        "format": "REST/JSON",
+        "instytucja": "AJPES (Słowenia)"
+      },
+      "updatedAt": "2026-08-24",
+      "en": {
+        "displayName": "AJPES PRS — Slovenian business register",
+        "description": "Slovenia's PRS business register (Poslovni register Slovenije), maintained by AJPES. The public REST API (Swagger docs) returns entity data by registration number or name. Requires free registration.",
+        "representativeQueries": [
+          "pobierz dane podmiotu po matična številka w AJPES",
+          "get an entity's data by matična številka in AJPES"
+        ],
+        "authLabel": "registration"
+      }
+    },
+    {
+      "identifier": "urn:air:otwarteapi.pl:api:edr-ua",
+      "displayName": "EDR — ukraiński Jednolity Rejestr Państwowy (osoby prawne i przedsiębiorcy)",
+      "type": "application/json",
+      "jurisdiction": "UA",
+      "url": "https://data.gov.ua/dataset/a1799820-195b-4982-8141-6e84f58103e7",
+      "description": "Ukraiński Jednolity Rejestr Państwowy (EDR) osób prawnych i przedsiębiorców, prowadzony przez Ministerstwo Sprawiedliwości i udostępniany bez klucza przez data.gov.ua (CKAN) jako okresowe zrzuty masowe XML.",
+      "tags": [
+        "firmy",
+        "rejestr-publiczny",
+        "bezplatne",
+        "bez-klucza",
+        "dane-masowe"
+      ],
+      "representativeQueries": [
+        "pobierz zbiorczy zrzut ukraińskiego rejestru firm (EDR) z data.gov.ua",
+        "download the Ukrainian company register (EDR) bulk dataset from data.gov.ua"
+      ],
+      "metadata": {
+        "auth": "brak",
+        "format": "CKAN · XML",
+        "instytucja": "Ministerstwo Sprawiedliwości (Ukraina)"
+      },
+      "updatedAt": "2026-08-24",
+      "en": {
+        "displayName": "EDR — Ukrainian Unified State Register (legal entities & entrepreneurs)",
+        "description": "Ukraine's Unified State Register (EDR) of legal entities and entrepreneurs, maintained by the Ministry of Justice and served keyless via data.gov.ua (CKAN) as periodic bulk XML dumps.",
+        "representativeQueries": [
+          "sprawdź metadane i pliki zbioru EDR przez API CKAN",
+          "get EDR dataset metadata and files via the CKAN API"
+        ]
+      }
+    },
+    {
+      "identifier": "urn:air:otwarteapi.pl:api:bolagsverket-se",
+      "displayName": "Bolagsverket — szwedzki rejestr firm (Värdefulla datamängder)",
+      "type": "application/json",
+      "jurisdiction": "SE",
+      "url": "https://bolagsverket.se/apierochoppnadata",
+      "description": "Bolagsverket to szwedzki urząd rejestracji firm. Darmowe API „Värdefulla datamängder” (Wartościowe zbiory danych) udostępnia informacje o firmach — numer organizacyjny, nazwę, kody działalności (SNI), formę prawną i sprawozdania finansowe — plus dane ze Statistiska centralbyrån (SCB). REST/JSON, autoryzacja OAuth2, bez umowy.",
+      "tags": [
+        "firmy",
+        "rejestr-publiczny",
+        "bezplatne",
+        "wymaga-klucza"
+      ],
+      "representativeQueries": [
+        "sprawdź szwedzką firmę po numerze organizacyjnym w Bolagsverket",
+        "look up a Swedish company by organization number in Bolagsverket"
+      ],
+      "metadata": {
+        "auth": "OAuth2",
+        "format": "REST/JSON",
+        "instytucja": "Bolagsverket (Szwecja)"
+      },
+      "updatedAt": "2026-08-24",
+      "en": {
+        "displayName": "Bolagsverket — Swedish company register (Valuable Datasets)",
+        "description": "Bolagsverket is Sweden's companies registration office. Its free 'Värdefulla datamängder' (Valuable Datasets) API exposes company information — organization number, name, activity codes (SNI), legal form and annual reports — plus data from Statistics Sweden (SCB). REST/JSON, OAuth2 authorization, no agreement required.",
+        "representativeQueries": [
+          "pobierz sprawozdania finansowe i kody SNI szwedzkiej firmy",
+          "fetch a Swedish company's annual reports and SNI codes"
+        ],
+        "authLabel": "OAuth2"
       }
     }
   ]
