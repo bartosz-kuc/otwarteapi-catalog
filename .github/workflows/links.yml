@@ -25,7 +25,7 @@ jobs:
         # 404 / 5xx / dead DNS should flag.
         uses: lycheeverse/lychee-action@v2
         with:
-          args: "--no-progress --max-retries 2 --timeout 20 --accept 200,202,206,301,302,307,403,405,429 README.md ai-catalog.json"
+          args: "--no-progress --max-retries 3 --timeout 30 --accept 200,202,206,301,302,307,403,405,429 README.md ai-catalog.json"
           fail: false
       - name: Create issue on broken links
         if: steps.lychee.outputs.exit_code != 0
