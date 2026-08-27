@@ -1,9 +1,11 @@
 # Endpoints verified live from a normal browser on 2026-08-27 but hostile to
-# the GitHub Actions runner (geo-block, rate-limit, anti-bot, or HTTP/2 quirk).
-# Excluded so the weekly link check flags only genuine breakage (404 / dead DNS
-# / real 5xx), not CI-environment artifacts. Re-verify before adding to this list.
+# the GitHub Actions runner (geo-block, rate-limit, anti-bot, or HTTP/2 quirk,
+# or simply too slow under the runner's conditions). Excluded so the weekly link
+# check flags only genuine breakage (404 / dead DNS / real 5xx), not CI-runner
+# artifacts. Re-verify a host is truly live before adding it here.
 data\.gov\.il
 api\.um\.warszawa\.pl
 bolagsverket\.se
 data\.go\.kr
 fred\.stlouisfed\.org
+www\.statistics\.sk
