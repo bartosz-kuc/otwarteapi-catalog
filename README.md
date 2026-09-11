@@ -2,7 +2,7 @@
 
 Publiczne dane katalogu stojące za [otwarteAPI.pl](https://otwarteapi.pl) —
 katalogu publicznych API rządowych z całego świata (Polska, Unia Europejska
-i kraje z 6 kontynentów — 32 jurysdykcje), opisanych tak by mogły być
+i kraje z 6 kontynentów — 40 jurysdykcji), opisanych tak by mogły być
 odkrywane i wywoływane przez agentów AI oraz ludzi.
 
 ## Co to jest

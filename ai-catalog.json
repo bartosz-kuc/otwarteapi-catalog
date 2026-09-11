@@ -1938,6 +1938,1050 @@
         ],
         "authLabel": "OAuth2"
       }
+    },
+    {
+      "identifier": "urn:air:otwarteapi.pl:api:brasilapi-cnpj",
+      "displayName": "BrasilAPI — CNPJ (rejestr firm)",
+      "type": "application/json",
+      "jurisdiction": "BR",
+      "url": "https://brasilapi.com.br/docs",
+      "description": "Rejestr firm Brazylii (CNPJ) przez BrasilAPI. Dane z Receita Federal: nazwa, adres, kody CNAE, wspólnicy (QSA), status. REST/JSON, bez klucza, otwarty CORS.",
+      "tags": [
+        "firmy",
+        "rejestr-publiczny",
+        "bezplatne",
+        "bez-klucza",
+        "otwarte-dane"
+      ],
+      "representativeQueries": [
+        "Sprawdź dane firmy Banco do Brasil po numerze CNPJ 00.000.000/0001-91",
+        "Pobierz kody CNAE i listę wspólników spółki z rejestru CNPJ"
+      ],
+      "metadata": {
+        "auth": "brak",
+        "format": "REST/JSON",
+        "instytucja": "BrasilAPI (projekt społecznościowy) — dane z rejestru CNPJ Receita Federal (brazylijski urząd skarbowy)"
+      },
+      "updatedAt": "2026-09-09",
+      "en": {
+        "displayName": "BrasilAPI — CNPJ (company register)",
+        "description": "Brazil's company register (CNPJ) via BrasilAPI. Receita Federal data: name, address, CNAE codes, partners (QSA), status. REST/JSON, keyless, open CORS.",
+        "representativeQueries": [
+          "Look up Banco do Brasil's company details by CNPJ 00.000.000/0001-91",
+          "Fetch the CNAE codes and partner list for a company from the CNPJ register"
+        ]
+      }
+    },
+    {
+      "identifier": "urn:air:otwarteapi.pl:api:corporations-canada",
+      "displayName": "Corporations Canada – rejestr spółek federalnych",
+      "type": "application/json",
+      "jurisdiction": "CA",
+      "url": "https://ised-isde.canada.ca/site/corporations-canada/en/accessing-federal-corporation-json-datasets",
+      "description": "Oficjalny federalny rejestr spółek Kanady (Corporations Canada, ISED). REST/JSON bez klucza; dane pobierane po stronie serwera (brak nagłówka CORS).",
+      "tags": [
+        "firmy",
+        "rejestr-publiczny",
+        "bezplatne",
+        "bez-klucza",
+        "otwarte-dane"
+      ],
+      "representativeQueries": [
+        "Pobierz status i adres siedziby kanadyjskiej spółki federalnej po numerze korporacyjnym.",
+        "Sprawdź historię nazw i daty rocznych zgromadzeń spółki po jej 9-cyfrowym numerze biznesowym."
+      ],
+      "metadata": {
+        "auth": "brak",
+        "format": "REST/JSON",
+        "instytucja": "Corporations Canada (kanadyjski federalny rejestr spółek)"
+      },
+      "updatedAt": "2026-09-09",
+      "en": {
+        "displayName": "Corporations Canada – Federal Corporations register",
+        "description": "Official Canadian federal corporation register (Corporations Canada, ISED). Keyless REST/JSON; server-side calls only (no browser CORS header).",
+        "representativeQueries": [
+          "Fetch a Canadian federal corporation's status and registered office address by its corporation number.",
+          "Look up a corporation's name history and annual meeting dates by its 9-digit business number."
+        ]
+      }
+    },
+    {
+      "identifier": "urn:air:otwarteapi.pl:api:ny-dos",
+      "displayName": "Active Corporations — rejestr czynnych spółek stanu Nowy Jork (NY DOS)",
+      "type": "application/json",
+      "jurisdiction": "US",
+      "url": "https://data.ny.gov/Economic-Development/Active-Corporations-Beginning-1800/n9v6-gdp6",
+      "description": "Oficjalny zbiór czynnych spółek zarejestrowanych w Departamencie Stanu stanu Nowy Jork. REST/JSON na portalu Socrata data.ny.gov, zapytania SoQL. Bez klucza.",
+      "tags": [
+        "firmy",
+        "rejestr-publiczny",
+        "otwarte-dane",
+        "dane-masowe",
+        "bezplatne",
+        "bez-klucza"
+      ],
+      "representativeQueries": [
+        "znajdź czynne spółki w hrabstwie Kings w rejestrze stanu Nowy Jork",
+        "sprawdź datę rejestracji i typ spółki po nazwie w rejestrze NY DOS"
+      ],
+      "metadata": {
+        "auth": "brak",
+        "format": "REST/JSON (Socrata)",
+        "instytucja": "New York State Department of State — Wydział Korporacji (Division of Corporations)"
+      },
+      "updatedAt": "2026-09-09",
+      "en": {
+        "displayName": "Active Corporations — New York State company register (NY Department of State)",
+        "description": "Official dataset of active corporations registered with the New York State Department of State. REST/JSON on the Socrata portal data.ny.gov, SoQL queries. No key.",
+        "representativeQueries": [
+          "find active corporations in Kings County in the New York State register",
+          "look up a company's filing date and entity type by name in the NY DOS register"
+        ]
+      }
+    },
+    {
+      "identifier": "urn:air:otwarteapi.pl:api:colorado-sos",
+      "displayName": "Rejestr przedsiębiorstw stanu Kolorado",
+      "type": "application/json",
+      "jurisdiction": "US",
+      "url": "https://data.colorado.gov/Business/Business-Entities-in-Colorado/4ykn-tg5h",
+      "description": "Oficjalny rejestr przedsiębiorstw stanu Kolorado (Sekretarz Stanu Kolorado). Spółki i LLC zarejestrowane od 1864 r. REST/JSON na platformie Socrata, bez klucza API.",
+      "tags": [
+        "firmy",
+        "rejestr-publiczny",
+        "otwarte-dane",
+        "bezplatne",
+        "bez-klucza",
+        "dane-masowe"
+      ],
+      "representativeQueries": [
+        "Jaki jest status rejestracyjny spółki o danej nazwie w stanie Kolorado?",
+        "Wypisz podmioty typu LLC zarejestrowane w Kolorado w 2025 roku."
+      ],
+      "metadata": {
+        "auth": "brak",
+        "format": "REST/JSON (Socrata)",
+        "instytucja": "Sekretarz Stanu Kolorado (Departament Stanu Kolorado)"
+      },
+      "updatedAt": "2026-09-09",
+      "en": {
+        "displayName": "Business Entities in Colorado",
+        "description": "Official register of Colorado business entities from the Colorado Secretary of State. Corporations and LLCs registered since 1864. Keyless Socrata REST/JSON API.",
+        "representativeQueries": [
+          "What is the registration status of a company with a given name in Colorado?",
+          "List LLC entities registered in Colorado in 2025."
+        ]
+      }
+    },
+    {
+      "identifier": "urn:air:otwarteapi.pl:api:connecticut-sos",
+      "displayName": "Rejestr firm stanu Connecticut",
+      "type": "application/json",
+      "jurisdiction": "US",
+      "url": "https://data.ct.gov/Business/Connecticut-Business-Registry-Business-Master/n7gp-d28j",
+      "description": "Oficjalny rejestr firm stanu Connecticut (Sekretarz Stanu) na portalu data.ct.gov. REST/JSON (Socrata), bez klucza API, otwarte CORS. Dane aktualizowane codziennie.",
+      "tags": [
+        "firmy",
+        "rejestr-publiczny",
+        "otwarte-dane",
+        "bezplatne",
+        "bez-klucza",
+        "dane-masowe"
+      ],
+      "representativeQueries": [
+        "Pokaż aktywne spółki LLC zarejestrowane w Connecticut",
+        "Znajdź firmy z Connecticut oznaczone jako prowadzone przez kobiety"
+      ],
+      "metadata": {
+        "auth": "brak",
+        "format": "REST/JSON (Socrata)",
+        "instytucja": "Sekretarz Stanu Connecticut (Wydział Usług dla Przedsiębiorstw)"
+      },
+      "updatedAt": "2026-09-09",
+      "en": {
+        "displayName": "Connecticut Business Registry",
+        "description": "Official Connecticut business registry (Secretary of the State) on the data.ct.gov Socrata portal. Keyless REST/JSON, open CORS, updated daily.",
+        "representativeQueries": [
+          "Show active LLCs registered in Connecticut",
+          "Find Connecticut businesses flagged as woman-owned"
+        ]
+      }
+    },
+    {
+      "identifier": "urn:air:otwarteapi.pl:api:sudreg-hr",
+      "displayName": "Chorwacki rejestr sądowy (Sudski registar)",
+      "type": "application/json",
+      "jurisdiction": "HR",
+      "url": "https://data.gov.hr/ckan/en/dataset/sudski-registar",
+      "description": "Oficjalny rejestr sądowy spółek w Chorwacji (Sudski registar). REST/JSON, wymaga bezpłatnej rejestracji klienta OAuth2 (client_id, secret i token bearer).",
+      "tags": [
+        "firmy",
+        "rejestr-publiczny",
+        "bezplatne",
+        "wymaga-klucza",
+        "otwarte-dane"
+      ],
+      "representativeQueries": [
+        "Pobierz pełne dane chorwackiej spółki po numerze OIB",
+        "Sprawdź nazwę, siedzibę i formę prawną podmiotu w chorwackim rejestrze sądowym"
+      ],
+      "metadata": {
+        "auth": "OAuth2 (bezpłatny)",
+        "format": "REST/JSON",
+        "instytucja": "Ministerstwo Sprawiedliwości, Administracji i Transformacji Cyfrowej Republiki Chorwacji"
+      },
+      "updatedAt": "2026-09-09",
+      "en": {
+        "displayName": "Croatian Court Register (Sudski registar)",
+        "description": "Croatia's official court register of companies (Sudski registar). REST/JSON, needs a free OAuth2 client registration (client_id/secret exchanged for a bearer token).",
+        "representativeQueries": [
+          "Fetch full registry details for a Croatian company by its OIB",
+          "Look up a company's name, registered seat and legal form in the Croatian court register"
+        ],
+        "authLabel": "OAuth2"
+      }
+    },
+    {
+      "identifier": "urn:air:otwarteapi.pl:api:un-sanctions",
+      "displayName": "Skonsolidowana lista sankcyjna ONZ",
+      "type": "application/xml",
+      "jurisdiction": "INT",
+      "url": "https://www.un.org/securitycouncil/content/un-sc-consolidated-list",
+      "description": "Oficjalna skonsolidowana lista sankcyjna Rady Bezpieczeństwa ONZ w formacie XML — osoby i podmioty objęte sankcjami. Bez klucza.",
+      "tags": [
+        "sankcje",
+        "rejestr-publiczny",
+        "bezplatne",
+        "bez-klucza"
+      ],
+      "representativeQueries": [
+        "Czy dana osoba figuruje na liście sankcyjnej Rady Bezpieczeństwa ONZ?",
+        "Pobierz skonsolidowaną listę podmiotów objętych sankcjami ONZ",
+        "Sprawdź, czy firma jest objęta sankcjami ONZ",
+        "Kiedy ostatnio zaktualizowano listę sankcyjną ONZ?"
+      ],
+      "metadata": {
+        "auth": "brak",
+        "format": "XML",
+        "instytucja": "Rada Bezpieczeństwa Organizacji Narodów Zjednoczonych"
+      },
+      "updatedAt": "2026-09-09",
+      "en": {
+        "displayName": "UN Security Council Consolidated Sanctions List",
+        "description": "Official UN Security Council Consolidated Sanctions List as XML — individuals and entities under UN sanctions. No API key required.",
+        "representativeQueries": [
+          "Is this person on the UN Security Council sanctions list?",
+          "Download the full consolidated list of UN-sanctioned entities",
+          "Check whether a company is subject to UN sanctions",
+          "When was the UN consolidated sanctions list last updated?"
+        ]
+      }
+    },
+    {
+      "identifier": "urn:air:otwarteapi.pl:api:eu-fsf-sanctions",
+      "displayName": "Skonsolidowana lista sankcji finansowych UE (FSF)",
+      "type": "application/xml",
+      "jurisdiction": "EU",
+      "url": "https://finance.ec.europa.eu/eu-and-world/sanctions-restrictive-measures/overview-sanctions-and-related-resources_en",
+      "description": "Oficjalna skonsolidowana lista sankcji finansowych UE (FSF) Komisji Europejskiej (DG FISMA). Pliki XML/CSV. Bez klucza — stały publiczny token w adresie URL.",
+      "tags": [
+        "sankcje",
+        "rejestr-publiczny",
+        "bezplatne",
+        "bez-klucza"
+      ],
+      "representativeQueries": [
+        "Pobierz aktualną skonsolidowaną listę sankcji finansowych UE w formacie XML",
+        "Sprawdź, czy osoba lub podmiot figuruje na unijnej liście sankcji FSF",
+        "Jaka jest podstawa prawna i akt prawny wpisu na listę sankcji UE"
+      ],
+      "metadata": {
+        "auth": "brak",
+        "format": "XML / CSV",
+        "instytucja": "Komisja Europejska — Dyrekcja Generalna ds. Stabilności Finansowej, Usług Finansowych i Unii Rynków Kapitałowych (DG FISMA)"
+      },
+      "updatedAt": "2026-09-09",
+      "en": {
+        "displayName": "EU Consolidated Financial Sanctions List (FSF)",
+        "description": "Official EU Consolidated Financial Sanctions List (FSF) from the European Commission (DG FISMA). XML/CSV files. Keyless — a fixed public token in the URL.",
+        "representativeQueries": [
+          "Download the current EU consolidated financial sanctions list as XML",
+          "Check whether a person or entity appears on the EU FSF sanctions list",
+          "What is the legal basis and act behind an EU sanctions listing"
+        ]
+      }
+    },
+    {
+      "identifier": "urn:air:otwarteapi.pl:api:bundesbank",
+      "displayName": "Deutsche Bundesbank — statystyczne API SDMX",
+      "type": "application/xml",
+      "jurisdiction": "DE",
+      "url": "https://api.statistiken.bundesbank.de/doc/index.html",
+      "description": "Oficjalne statystyczne API SDMX niemieckiego banku centralnego (Deutsche Bundesbank): kursy walut, stopy procentowe i dane monetarne jako szeregi czasowe. Bez klucza.",
+      "tags": [
+        "finanse",
+        "waluty",
+        "dane-statystyczne",
+        "bezplatne",
+        "bez-klucza"
+      ],
+      "representativeQueries": [
+        "kurs referencyjny EUR/USD wg EBC z API Bundesbanku",
+        "niemieckie stopy procentowe jako szereg czasowy SDMX"
+      ],
+      "metadata": {
+        "auth": "brak",
+        "format": "SDMX (XML/JSON/CSV)",
+        "instytucja": "Deutsche Bundesbank (niemiecki bank centralny)"
+      },
+      "updatedAt": "2026-09-09",
+      "en": {
+        "displayName": "Deutsche Bundesbank — statistical SDMX API",
+        "description": "Official SDMX statistical API of Germany's central bank (Deutsche Bundesbank): exchange rates, interest rates and monetary data as time series. No key required.",
+        "representativeQueries": [
+          "ECB EUR/USD reference rate from the Bundesbank API",
+          "German interest rates as an SDMX time series"
+        ]
+      }
+    },
+    {
+      "identifier": "urn:air:otwarteapi.pl:api:snb",
+      "displayName": "Portal danych — Szwajcarski Bank Narodowy (SNB)",
+      "type": "application/json",
+      "jurisdiction": "CH",
+      "url": "https://data.snb.ch/en",
+      "description": "Oficjalne REST/JSON API portalu danych Szwajcarskiego Banku Narodowego (SNB). Szeregi czasowe: stopy procentowe, kursy walut, agregaty monetarne. Bez klucza.",
+      "tags": [
+        "finanse",
+        "dane-statystyczne",
+        "bezplatne",
+        "bez-klucza"
+      ],
+      "representativeQueries": [
+        "pobierz szereg czasowy stóp procentowych SNB w formacie JSON",
+        "kursy walut i agregaty monetarne z portalu danych SNB"
+      ],
+      "metadata": {
+        "auth": "brak",
+        "format": "REST/JSON",
+        "instytucja": "Szwajcarski Bank Narodowy (SNB)"
+      },
+      "updatedAt": "2026-09-09",
+      "en": {
+        "displayName": "Data portal — Swiss National Bank (SNB)",
+        "description": "Official REST/JSON API of the Swiss National Bank (SNB) data portal. Time series: interest rates, exchange rates, monetary aggregates. No key required.",
+        "representativeQueries": [
+          "fetch the SNB interest-rate time series as JSON",
+          "exchange rates and monetary aggregates from the SNB data portal"
+        ]
+      }
+    },
+    {
+      "identifier": "urn:air:otwarteapi.pl:api:riksbank-swea",
+      "displayName": "Kursy walut i stopy procentowe — API SWEA (Sveriges Riksbank)",
+      "type": "application/json",
+      "jurisdiction": "SE",
+      "url": "https://www.riksbank.se/en-gb/statistics/interest-rates-and-exchange-rates/retrieving-interest-rates-and-exchange-rates-via-api/",
+      "description": "Publiczne REST API szwedzkiego banku centralnego (SWEA): kursy walut, stopy procentowe i serie finansowe w formacie JSON. Bez klucza.",
+      "tags": [
+        "finanse",
+        "waluty",
+        "bezplatne",
+        "bez-klucza"
+      ],
+      "representativeQueries": [
+        "jaki jest dzisiejszy kurs SEK do USD wg Riksbanku",
+        "historyczna stopa referencyjna Riksbanku"
+      ],
+      "metadata": {
+        "auth": "brak",
+        "format": "REST/JSON",
+        "instytucja": "Sveriges Riksbank (szwedzki bank centralny)"
+      },
+      "updatedAt": "2026-09-09",
+      "en": {
+        "displayName": "Exchange rates and interest rates — SWEA API (Sveriges Riksbank)",
+        "description": "Public REST API of Sweden's central bank (SWEA): exchange rates, interest rates and financial series in JSON. No key required.",
+        "representativeQueries": [
+          "what is today's SEK to USD rate per the Riksbank",
+          "historical Riksbank policy rate"
+        ]
+      }
+    },
+    {
+      "identifier": "urn:air:otwarteapi.pl:api:bank-of-england",
+      "displayName": "Bank Anglii — Interaktywna Baza Danych Statystycznych (IADB)",
+      "type": "text/csv",
+      "jurisdiction": "GB",
+      "url": "https://www.bankofengland.co.uk/boeapps/database/",
+      "description": "Interaktywna Baza Danych Statystycznych Banku Anglii (IADB): szeregi czasowe po kodzie serii w formacie CSV — kursy walut, stopy, agregaty monetarne. Bez klucza.",
+      "tags": [
+        "finanse",
+        "dane-statystyczne",
+        "bezplatne",
+        "bez-klucza"
+      ],
+      "representativeQueries": [
+        "pobierz kurs dolara do funta (XUDLUSS) z bazy Banku Anglii",
+        "historyczna oficjalna stopa procentowa Banku Anglii (Bank Rate) w CSV"
+      ],
+      "metadata": {
+        "auth": "brak",
+        "format": "CSV",
+        "instytucja": "Bank Anglii"
+      },
+      "updatedAt": "2026-09-09",
+      "en": {
+        "displayName": "Bank of England — Interactive Statistical Database (IADB)",
+        "description": "Bank of England Interactive Statistical Database (IADB): download time series by series code as CSV — exchange rates, interest rates, monetary aggregates. No key required.",
+        "representativeQueries": [
+          "download the US dollar to sterling rate (XUDLUSS) from the Bank of England database",
+          "historical Bank of England official Bank Rate as CSV"
+        ]
+      }
+    },
+    {
+      "identifier": "urn:air:otwarteapi.pl:api:oecd-sdmx",
+      "displayName": "OECD — statystyki międzynarodowe (SDMX)",
+      "type": "application/vnd.sdmx.data+json",
+      "jurisdiction": "INT",
+      "url": "https://data-explorer.oecd.org/",
+      "description": "Oficjalne API statystyczne OECD w standardzie SDMX — dane gospodarcze i społeczne krajów członkowskich, w formatach SDMX-JSON, SDMX-ML i CSV. Bez klucza.",
+      "tags": [
+        "dane-statystyczne",
+        "otwarte-dane",
+        "bezplatne",
+        "bez-klucza"
+      ],
+      "representativeQueries": [
+        "porównaj PKB per capita w krajach OECD",
+        "stopa inflacji w krajach OECD w ostatnich latach"
+      ],
+      "metadata": {
+        "auth": "brak",
+        "format": "REST/SDMX (JSON/XML/CSV)",
+        "instytucja": "Organizacja Współpracy Gospodarczej i Rozwoju (OECD)"
+      },
+      "updatedAt": "2026-09-09",
+      "en": {
+        "displayName": "OECD — international statistics (SDMX)",
+        "description": "Official OECD statistics API built on the SDMX standard — economic and social data for member countries, in SDMX-JSON, SDMX-ML and CSV. No key required.",
+        "representativeQueries": [
+          "compare GDP per capita across OECD countries",
+          "inflation rate across OECD countries in recent years"
+        ]
+      }
+    },
+    {
+      "identifier": "urn:air:otwarteapi.pl:api:bis-stats",
+      "displayName": "Bank Rozrachunków Międzynarodowych (BIS) — statystyki SDMX",
+      "type": "application/xml",
+      "jurisdiction": "INT",
+      "url": "https://data.bis.org/",
+      "description": "Oficjalne REST API statystyk Banku Rozrachunków Międzynarodowych (BIS), zgodne z SDMX: stopy polityki pieniężnej, statystyka bankowa, kredyt, kursy. Bez klucza.",
+      "tags": [
+        "finanse",
+        "dane-statystyczne",
+        "bezplatne",
+        "bez-klucza"
+      ],
+      "representativeQueries": [
+        "jaka jest aktualna stopa polityki pieniężnej banku centralnego wg BIS",
+        "pobierz statystykę bankowości międzynarodowej (LBS) z BIS"
+      ],
+      "metadata": {
+        "auth": "brak",
+        "format": "SDMX-ML / JSON",
+        "instytucja": "Bank Rozrachunków Międzynarodowych (BIS)"
+      },
+      "updatedAt": "2026-09-09",
+      "en": {
+        "displayName": "Bank for International Settlements (BIS) — SDMX statistics",
+        "description": "Official SDMX-compliant REST API for Bank for International Settlements (BIS) statistics: policy rates, banking, credit and exchange-rate data. No key required.",
+        "representativeQueries": [
+          "what is a central bank's current policy rate per the BIS",
+          "fetch BIS international banking statistics (LBS)"
+        ]
+      }
+    },
+    {
+      "identifier": "urn:air:otwarteapi.pl:api:who-gho",
+      "displayName": "WHO Global Health Observatory — globalne statystyki zdrowotne",
+      "type": "application/json",
+      "jurisdiction": "INT",
+      "url": "https://www.who.int/data/gho/info/gho-odata-api",
+      "description": "Oficjalne OData API statystyk zdrowotnych Światowej Organizacji Zdrowia (WHO GHO). Tysiące wskaźników zdrowia dla krajów świata, format JSON. Bez klucza.",
+      "tags": [
+        "dane-statystyczne",
+        "otwarte-dane",
+        "bezplatne",
+        "bez-klucza"
+      ],
+      "representativeQueries": [
+        "pobierz wskaźnik zdrowotny WHO dla wybranego kraju",
+        "porównaj oczekiwaną długość życia krajów przez API WHO GHO"
+      ],
+      "metadata": {
+        "auth": "brak",
+        "format": "OData JSON",
+        "instytucja": "Światowa Organizacja Zdrowia (WHO)"
+      },
+      "updatedAt": "2026-09-09",
+      "en": {
+        "displayName": "WHO Global Health Observatory — global health statistics",
+        "description": "Official OData API of World Health Organization health statistics (WHO GHO). Thousands of health indicators for countries worldwide, JSON. No key.",
+        "representativeQueries": [
+          "fetch a WHO health indicator for a given country",
+          "compare countries' life expectancy via the WHO GHO API"
+        ]
+      }
+    },
+    {
+      "identifier": "urn:air:otwarteapi.pl:api:unesco-uis",
+      "displayName": "UIS — statystyki UNESCO (edukacja, nauka, kultura)",
+      "type": "application/json",
+      "jurisdiction": "INT",
+      "url": "https://databrowser.uis.unesco.org/",
+      "description": "Oficjalne REST API Instytutu Statystycznego UNESCO (UIS): dane o edukacji, nauce, kulturze i technologii dla krajów całego świata. JSON, bez klucza.",
+      "tags": [
+        "dane-statystyczne",
+        "otwarte-dane",
+        "bezplatne",
+        "bez-klucza"
+      ],
+      "representativeQueries": [
+        "odsetek dzieci kończących szkołę podstawową w Polsce",
+        "wydatki na badania i rozwój jako % PKB dla wybranego kraju"
+      ],
+      "metadata": {
+        "auth": "brak",
+        "format": "REST/JSON",
+        "instytucja": "Instytut Statystyczny UNESCO (UIS)"
+      },
+      "updatedAt": "2026-09-09",
+      "en": {
+        "displayName": "UIS — UNESCO statistics (education, science, culture)",
+        "description": "Official REST/JSON API of the UNESCO Institute for Statistics (UIS): education, science, culture and technology indicators for countries worldwide. No key.",
+        "representativeQueries": [
+          "primary-school completion rate in Poland",
+          "research and development spending as % of GDP for a given country"
+        ]
+      }
+    },
+    {
+      "identifier": "urn:air:otwarteapi.pl:api:un-comtrade",
+      "displayName": "UN Comtrade — statystyki handlu międzynarodowego",
+      "type": "application/json",
+      "jurisdiction": "INT",
+      "url": "https://uncomtrade.org/docs/un-comtrade-api/",
+      "description": "Oficjalne REST/JSON API statystyk handlu międzynarodowego ONZ (UN Comtrade): eksport i import towarów wg krajów i kodów HS. Warstwa preview bez klucza, limit 500 rekordów.",
+      "tags": [
+        "dane-statystyczne",
+        "handel",
+        "bezplatne",
+        "bez-klucza"
+      ],
+      "representativeQueries": [
+        "eksport towarów z danego kraju w 2023 roku według kodów HS",
+        "wartość importu określonej grupy towarowej między dwoma krajami"
+      ],
+      "metadata": {
+        "auth": "brak (wersja preview; pełne API = bezpłatny klucz)",
+        "format": "REST/JSON",
+        "instytucja": "Organizacja Narodów Zjednoczonych (UN Comtrade)"
+      },
+      "updatedAt": "2026-09-09",
+      "en": {
+        "displayName": "UN Comtrade — international trade statistics",
+        "description": "Official REST/JSON API for UN international trade statistics (UN Comtrade): goods exports and imports by country and HS code. Keyless preview tier, 500-row cap.",
+        "representativeQueries": [
+          "a country's goods exports in 2023 by HS commodity code",
+          "import value of a given commodity group between two countries"
+        ]
+      }
+    },
+    {
+      "identifier": "urn:air:otwarteapi.pl:api:ons-uk",
+      "displayName": "Statystyka publiczna Wielkiej Brytanii — Office for National Statistics",
+      "type": "application/json",
+      "jurisdiction": "GB",
+      "url": "https://developer.ons.gov.uk/",
+      "description": "Oficjalne REST API statystyki publicznej Wielkiej Brytanii (Office for National Statistics). Zbiory danych, edycje, wersje i obserwacje w JSON. Bez klucza.",
+      "tags": [
+        "dane-statystyczne",
+        "otwarte-dane",
+        "bezplatne",
+        "bez-klucza"
+      ],
+      "representativeQueries": [
+        "pobierz listę zbiorów danych statystycznych ONS",
+        "znajdź najnowszą wersję zbioru o dobrostanie w Wielkiej Brytanii"
+      ],
+      "metadata": {
+        "auth": "brak",
+        "format": "REST/JSON",
+        "instytucja": "Office for National Statistics (ONS)"
+      },
+      "updatedAt": "2026-09-09",
+      "en": {
+        "displayName": "UK official statistics — Office for National Statistics",
+        "description": "Official REST/JSON API for UK official statistics from the Office for National Statistics (ONS). Datasets, editions, versions and observations. No API key.",
+        "representativeQueries": [
+          "list the ONS statistical datasets",
+          "get the latest version of the UK wellbeing dataset"
+        ]
+      }
+    },
+    {
+      "identifier": "urn:air:otwarteapi.pl:api:statcan",
+      "displayName": "Web Data Service (WDS) — urząd statystyczny Kanady",
+      "type": "application/json",
+      "jurisdiction": "CA",
+      "url": "https://www.statcan.gc.ca/en/developers/wds",
+      "description": "Oficjalne REST API kanadyjskiego urzędu statystycznego (Statistics Canada WDS). Tysiące tabel danych o gospodarce, inflacji i demografii Kanady. JSON, bez klucza, otwarty CORS.",
+      "tags": [
+        "dane-statystyczne",
+        "otwarte-dane",
+        "bezplatne",
+        "bez-klucza"
+      ],
+      "representativeQueries": [
+        "pobierz tabelę danych ze Statistics Canada po identyfikatorze produktu (productId)",
+        "sprawdź, które tabele statystyk Kanady zaktualizowano danego dnia"
+      ],
+      "metadata": {
+        "auth": "brak",
+        "format": "REST/JSON",
+        "instytucja": "Statistics Canada / Statistique Canada"
+      },
+      "updatedAt": "2026-09-09",
+      "en": {
+        "displayName": "Web Data Service (WDS) — Statistics Canada",
+        "description": "Official REST API of Canada's statistical office (Statistics Canada WDS). Thousands of data tables on Canada's economy, inflation and demographics. JSON, no key, open CORS.",
+        "representativeQueries": [
+          "fetch a data table from Statistics Canada by product id (productId)",
+          "check which Statistics Canada tables were updated on a given day"
+        ]
+      }
+    },
+    {
+      "identifier": "urn:air:otwarteapi.pl:api:abs-australia",
+      "displayName": "ABS Data API — Australijskie Biuro Statystyczne (SDMX)",
+      "type": "application/xml",
+      "jurisdiction": "AU",
+      "url": "https://www.abs.gov.au/about/data-services/application-programming-interfaces-apis",
+      "description": "Oficjalne REST API Australijskiego Biura Statystycznego (ABS) w standardzie SDMX. Dane gospodarcze, spoleczne i spisowe w formatach SDMX-ML, JSON i CSV. Bez klucza.",
+      "tags": [
+        "dane-statystyczne",
+        "otwarte-dane",
+        "bezplatne",
+        "bez-klucza"
+      ],
+      "representativeQueries": [
+        "pobierz australijski wskaznik cen konsumpcyjnych (CPI) od 2020 roku",
+        "jakie przeplywy danych (dataflows) udostepnia agencja ABS"
+      ],
+      "metadata": {
+        "auth": "brak",
+        "format": "SDMX-ML / JSON / CSV",
+        "instytucja": "Australijskie Biuro Statystyczne (ABS)"
+      },
+      "updatedAt": "2026-09-09",
+      "en": {
+        "displayName": "ABS Data API — Australian Bureau of Statistics (SDMX)",
+        "description": "Official SDMX-compliant REST API of the Australian Bureau of Statistics (ABS). Economic, social and Census data as SDMX-ML, JSON and CSV. No key required.",
+        "representativeQueries": [
+          "fetch the Australian consumer price index (CPI) from 2020 onward",
+          "list the dataflows published by the ABS agency"
+        ]
+      }
+    },
+    {
+      "identifier": "urn:air:otwarteapi.pl:api:cso-ireland",
+      "displayName": "PxStat — Centralny Urząd Statystyczny (Irlandia)",
+      "type": "application/json",
+      "jurisdiction": "IE",
+      "url": "https://data.cso.ie/",
+      "description": "REST API irlandzkiego urzędu statystycznego (CSO) do bazy PxStat — dane demograficzne, gospodarcze i społeczne Irlandii w formacie JSON-stat 2.0. Bez klucza.",
+      "tags": [
+        "dane-statystyczne",
+        "otwarte-dane",
+        "bezplatne",
+        "bez-klucza"
+      ],
+      "representativeQueries": [
+        "jaka była zmiana liczby ludności Irlandii w spisie 2011–2016",
+        "pobierz irlandzki zbiór statystyczny w formacie JSON-stat po kodzie macierzy"
+      ],
+      "metadata": {
+        "auth": "brak",
+        "format": "REST/JSON-stat 2.0",
+        "instytucja": "Centralny Urząd Statystyczny (CSO), Irlandia"
+      },
+      "updatedAt": "2026-09-09",
+      "en": {
+        "displayName": "PxStat — Central Statistics Office (Ireland)",
+        "description": "REST API of Ireland's Central Statistics Office (CSO) for the PxStat database — Ireland's demographic, economic and social data in JSON-stat 2.0 format. No key required.",
+        "representativeQueries": [
+          "what was the change in Ireland's population in the 2011–2016 census",
+          "fetch an Irish statistics dataset in JSON-stat format by its matrix code"
+        ]
+      }
+    },
+    {
+      "identifier": "urn:air:otwarteapi.pl:api:statbank-dk",
+      "displayName": "StatBank API — urząd statystyczny Danii (Danmarks Statistik)",
+      "type": "application/json",
+      "jurisdiction": "DK",
+      "url": "https://www.dst.dk/en/Statistik/hjaelp-til-statistikbanken/api",
+      "description": "Oficjalne REST API duńskiego urzędu statystycznego (Danmarks Statistik) do bazy StatBank — dane demograficzne, gospodarcze i społeczne Danii. Bez klucza, otwarty CORS.",
+      "tags": [
+        "dane-statystyczne",
+        "otwarte-dane",
+        "bezplatne",
+        "bez-klucza"
+      ],
+      "representativeQueries": [
+        "liczba ludności Danii według regionu",
+        "dane demograficzne Danii z bazy StatBank"
+      ],
+      "metadata": {
+        "auth": "brak",
+        "format": "JSON / CSV / PX",
+        "instytucja": "Danmarks Statistik"
+      },
+      "updatedAt": "2026-09-09",
+      "en": {
+        "displayName": "StatBank API — Statistics Denmark",
+        "description": "Official REST API of Statistics Denmark (Danmarks Statistik) for the StatBank database — Denmark's demographic, economic and social data. No key, open CORS.",
+        "representativeQueries": [
+          "Denmark's population by region",
+          "Danish demographic data from StatBank"
+        ]
+      }
+    },
+    {
+      "identifier": "urn:air:otwarteapi.pl:api:scb-sweden",
+      "displayName": "PxWeb API — szwedzki urząd statystyczny (SCB)",
+      "type": "application/json",
+      "jurisdiction": "SE",
+      "url": "https://www.scb.se/en/services/open-data-api/",
+      "description": "REST API szwedzkiego urzędu statystycznego (SCB) do bazy Statistikdatabasen (PxWeb). Dane demograficzne i gospodarcze Szwecji w formacie JSON-stat. Bez klucza.",
+      "tags": [
+        "dane-statystyczne",
+        "otwarte-dane",
+        "bezplatne",
+        "bez-klucza"
+      ],
+      "representativeQueries": [
+        "liczba ludności Szwecji według roku",
+        "dane demograficzne i gospodarcze Szwecji z bazy SCB"
+      ],
+      "metadata": {
+        "auth": "brak",
+        "format": "PX-JSON (JSON-stat)",
+        "instytucja": "Statistiska centralbyrån (SCB)"
+      },
+      "updatedAt": "2026-09-09",
+      "en": {
+        "displayName": "PxWeb API — Statistics Sweden (SCB)",
+        "description": "REST API of Statistics Sweden (SCB) for the Statistikdatabasen database (PxWeb). Sweden's demographic and economic data in JSON-stat format. No key required.",
+        "representativeQueries": [
+          "Sweden's population by year",
+          "Sweden's demographic and economic data from the SCB database"
+        ]
+      }
+    },
+    {
+      "identifier": "urn:air:otwarteapi.pl:api:mospi-india",
+      "displayName": "eSankhyiki (MoSPI) — statystyka Indii",
+      "type": "application/json",
+      "jurisdiction": "IN",
+      "url": "https://esankhyiki.mospi.gov.in/",
+      "description": "Oficjalne REST API statystyki gospodarczej Indii (MoSPI eSankhyiki): indeks cen hurtowych WPI i inne szeregi makro w formacie JSON. Bez klucza, dostęp po stronie serwera.",
+      "tags": [
+        "dane-statystyczne",
+        "otwarte-dane",
+        "bezplatne",
+        "bez-klucza"
+      ],
+      "representativeQueries": [
+        "indeks cen hurtowych w Indiach w 2023 roku",
+        "dane WPI dla artykułów rolnych z eSankhyiki",
+        "oficjalne statystyki gospodarcze Indii w formacie JSON"
+      ],
+      "metadata": {
+        "auth": "brak",
+        "format": "REST/JSON",
+        "instytucja": "Ministerstwo Statystyki i Realizacji Programów (MoSPI), Rząd Indii"
+      },
+      "updatedAt": "2026-09-09",
+      "en": {
+        "displayName": "eSankhyiki (MoSPI) — India statistics",
+        "description": "Official REST API of India's economic statistics (MoSPI eSankhyiki): Wholesale Price Index (WPI) and other macro series as JSON. No key required; server-side only.",
+        "representativeQueries": [
+          "wholesale price index for India in 2023",
+          "MoSPI WPI records for food articles",
+          "official Indian macroeconomic statistics as JSON"
+        ]
+      }
+    },
+    {
+      "identifier": "urn:air:otwarteapi.pl:api:contracts-finder-uk",
+      "displayName": "Contracts Finder — brytyjskie API zamówień publicznych (OCDS)",
+      "type": "application/json",
+      "jurisdiction": "GB",
+      "url": "https://www.contractsfinder.service.gov.uk/apidocumentation",
+      "description": "Oficjalne REST API brytyjskiego rejestru zamówień publicznych Contracts Finder. Ogłoszenia i udzielone kontrakty w standardzie OCDS 1.1 (JSON). Bez klucza.",
+      "tags": [
+        "zamowienia-publiczne",
+        "rejestr-publiczny",
+        "bezplatne",
+        "bez-klucza"
+      ],
+      "representativeQueries": [
+        "znajdź brytyjskie ogłoszenia o zamówieniach publicznych opublikowane po danej dacie",
+        "pobierz informacje o kontraktach udzielonych przez instytucje publiczne w Wielkiej Brytanii"
+      ],
+      "metadata": {
+        "auth": "brak",
+        "format": "JSON (OCDS 1.1)",
+        "instytucja": "Rząd Wielkiej Brytanii (Cabinet Office)"
+      },
+      "updatedAt": "2026-09-09",
+      "en": {
+        "displayName": "Contracts Finder — UK public procurement API (OCDS)",
+        "description": "Official REST API of the UK's Contracts Finder procurement register. Tender and award notices in the Open Contracting Data Standard (OCDS 1.1), JSON. No key.",
+        "representativeQueries": [
+          "find UK public procurement notices published after a given date",
+          "retrieve details of contracts awarded by UK public bodies"
+        ]
+      }
+    },
+    {
+      "identifier": "urn:air:otwarteapi.pl:api:ted-europa",
+      "displayName": "TED (Tenders Electronic Daily) — API zamówień publicznych UE",
+      "type": "application/json",
+      "jurisdiction": "EU",
+      "url": "https://docs.ted.europa.eu/api/latest/index.html",
+      "description": "Oficjalne REST API ogłoszeń o zamówieniach publicznych w UE (TED). Wyszukiwanie i pobieranie ogłoszeń bez klucza; klucz jest potrzebny tylko do publikacji.",
+      "tags": [
+        "zamowienia-publiczne",
+        "rejestr-publiczny",
+        "bezplatne",
+        "bez-klucza"
+      ],
+      "representativeQueries": [
+        "znajdź aktualne przetargi UE w danej kategorii CPV",
+        "pobierz ogłoszenia o udzieleniu zamówienia dla wskazanego kraju i przedziału dat"
+      ],
+      "metadata": {
+        "auth": "brak",
+        "format": "REST/JSON",
+        "instytucja": "Urząd Publikacji Unii Europejskiej"
+      },
+      "updatedAt": "2026-09-09",
+      "en": {
+        "displayName": "TED (Tenders Electronic Daily) — EU public procurement API",
+        "description": "Official REST API for EU public procurement notices (TED). Search and download notices with no key; a key is only needed to submit notices.",
+        "representativeQueries": [
+          "find current EU tenders in a given CPV category",
+          "download contract award notices for a given country and date range"
+        ]
+      }
+    },
+    {
+      "identifier": "urn:air:otwarteapi.pl:api:legislation-uk",
+      "displayName": "legislation.gov.uk — akty prawne Wielkiej Brytanii",
+      "type": "application/xml",
+      "jurisdiction": "GB",
+      "url": "https://www.legislation.gov.uk/developer",
+      "description": "Pełny tekst i metadane ustawodawstwa Wielkiej Brytanii (legislation.gov.uk) jako XML w standardzie CLML oraz kanały Atom. Prowadzi The National Archives. Bez klucza.",
+      "tags": [
+        "prawo",
+        "rejestr-publiczny",
+        "bezplatne",
+        "bez-klucza"
+      ],
+      "representativeQueries": [
+        "pobierz pełny tekst ustawy po typie, roku i numerze (np. ukpga/2015/26)",
+        "śledź nowo opublikowane akty prawne przez kanał Atom",
+        "pobierz metadane aktu wykonawczego (Statutory Instrument) w formacie CLML"
+      ],
+      "metadata": {
+        "auth": "brak",
+        "format": "XML (CLML)",
+        "instytucja": "The National Archives (brytyjskie archiwum państwowe)"
+      },
+      "updatedAt": "2026-09-09",
+      "en": {
+        "displayName": "legislation.gov.uk — UK legislation",
+        "description": "Full text and metadata of UK legislation (legislation.gov.uk) as CLML XML plus Atom feeds. Run by The National Archives. No key required.",
+        "representativeQueries": [
+          "fetch the full text of an Act by type, year and number (e.g. ukpga/2015/26)",
+          "track newly published legislation via an Atom feed",
+          "retrieve the metadata of a Statutory Instrument in CLML format"
+        ]
+      }
+    },
+    {
+      "identifier": "urn:air:otwarteapi.pl:api:base-adresse-nationale",
+      "displayName": "Base Adresse Nationale (BAN) — geokoder Géoplateforme (IGN)",
+      "type": "application/json",
+      "jurisdiction": "FR",
+      "url": "https://adresse.data.gouv.fr/",
+      "description": "Oficjalne API geokodowania Géoplateforme (IGN) oparte na Base Adresse Nationale. Zamienia francuskie adresy na współrzędne i zwraca GeoJSON. Bez klucza.",
+      "tags": [
+        "dane-przestrzenne",
+        "otwarte-dane",
+        "bezplatne",
+        "bez-klucza"
+      ],
+      "representativeQueries": [
+        "znajdź współrzędne geograficzne dla francuskiego adresu",
+        "geokoduj listę adresów we Francji do punktów na mapie"
+      ],
+      "metadata": {
+        "auth": "brak",
+        "format": "REST/GeoJSON",
+        "instytucja": "IGN — Krajowy Instytut Informacji Geograficznej i Leśnej (Géoplateforme)"
+      },
+      "updatedAt": "2026-09-09",
+      "en": {
+        "displayName": "Base Adresse Nationale (BAN) — Géoplateforme geocoder (IGN)",
+        "description": "Official Géoplateforme (IGN) geocoding API built on the Base Adresse Nationale. Converts French addresses to coordinates and returns GeoJSON. No key required.",
+        "representativeQueries": [
+          "find the geographic coordinates for a French address",
+          "geocode a list of French addresses into map points"
+        ]
+      }
+    },
+    {
+      "identifier": "urn:air:otwarteapi.pl:api:us-census-geocoder",
+      "displayName": "US Census Geocoder — geokoder adresów USA",
+      "type": "application/json",
+      "jurisdiction": "US",
+      "url": "https://www.census.gov/data/developers/data-sets/Geocoding-services.html",
+      "description": "Oficjalny geokoder adresów USA (U.S. Census Bureau) — zamienia adres na współrzędne i identyfikatory geografii spisowej: stan, hrabstwo, tract, block. REST/JSON, bez klucza.",
+      "tags": [
+        "dane-przestrzenne",
+        "otwarte-dane",
+        "bezplatne",
+        "bez-klucza"
+      ],
+      "representativeQueries": [
+        "zamień amerykański adres na współrzędne geograficzne",
+        "znajdź stan, hrabstwo i tract spisowy dla adresu w USA"
+      ],
+      "metadata": {
+        "auth": "brak",
+        "format": "REST/JSON",
+        "instytucja": "U.S. Census Bureau"
+      },
+      "updatedAt": "2026-09-09",
+      "en": {
+        "displayName": "US Census Geocoder — U.S. address geocoder",
+        "description": "Official U.S. address geocoder (U.S. Census Bureau) — turns an address into coordinates and census geography IDs: state, county, tract, block. REST/JSON, no key.",
+        "representativeQueries": [
+          "convert a U.S. address to geographic coordinates",
+          "find the census state, county and tract for a U.S. address"
+        ]
+      }
+    },
+    {
+      "identifier": "urn:air:otwarteapi.pl:api:data-public-lu",
+      "displayName": "data.public.lu — luksemburski portal otwartych danych",
+      "type": "application/json",
+      "jurisdiction": "LU",
+      "url": "https://data.public.lu/en/",
+      "description": "Krajowy portal otwartych danych Luksemburga (data.public.lu) na platformie udata. Ponad 3 tys. zbiorów, REST/JSON. Bez klucza. Wypróbuj na żywo.",
+      "tags": [
+        "otwarte-dane",
+        "bezplatne",
+        "bez-klucza"
+      ],
+      "representativeQueries": [
+        "znajdź luksemburskie zbiory danych o budżecie państwa",
+        "wyszukaj otwarte dane o transporcie w Luksemburgu"
+      ],
+      "metadata": {
+        "auth": "brak",
+        "format": "REST/JSON (udata)",
+        "instytucja": "Rząd Luksemburga"
+      },
+      "updatedAt": "2026-09-09",
+      "en": {
+        "displayName": "data.public.lu — Luxembourg's open data portal",
+        "description": "Luxembourg's national open-data portal (data.public.lu), built on udata. 3,000+ datasets, REST/JSON. No key required. Try it live.",
+        "representativeQueries": [
+          "find Luxembourg datasets about the national budget",
+          "search open transport data in Luxembourg"
+        ]
+      }
+    },
+    {
+      "identifier": "urn:air:otwarteapi.pl:api:dados-gov-pt",
+      "displayName": "Otwarte Dane — dados.gov.pt",
+      "type": "application/json",
+      "jurisdiction": "PT",
+      "url": "https://dados.gov.pt/api/1/",
+      "description": "Oficjalne REST API portalu otwartych danych Portugalii (dados.gov.pt, platforma udata) — metadane tysięcy zbiorów danych administracji publicznej. Bez klucza.",
+      "tags": [
+        "otwarte-dane",
+        "bezplatne",
+        "bez-klucza"
+      ],
+      "representativeQueries": [
+        "znajdź zbiory danych o środowisku w Portugalii",
+        "wyszukaj otwarte dane danej instytucji publicznej"
+      ],
+      "metadata": {
+        "auth": "brak",
+        "format": "REST/JSON (udata)",
+        "instytucja": "Agencja ds. Reformy Technologicznej Państwa (ARTE)"
+      },
+      "updatedAt": "2026-09-09",
+      "en": {
+        "displayName": "Open Data — dados.gov.pt",
+        "description": "Official REST API of Portugal's open-data portal (dados.gov.pt, udata platform) — metadata for thousands of public-sector datasets. No key required.",
+        "representativeQueries": [
+          "find datasets about the environment in Portugal",
+          "search open data published by a given public body"
+        ]
+      }
+    },
+    {
+      "identifier": "urn:air:otwarteapi.pl:api:uspto-tsdr",
+      "displayName": "USPTO TSDR — znaki towarowe USA",
+      "type": "application/json",
+      "jurisdiction": "US",
+      "url": "https://data.uspto.gov/apis/tsdr",
+      "description": "Oficjalne REST API USPTO (TSDR) do sprawdzania statusu i dokumentów amerykańskich znaków towarowych po numerze zgłoszenia lub rejestracji. Wymaga bezpłatnego klucza API.",
+      "tags": [
+        "wlasnosc-intelektualna",
+        "rejestr-publiczny",
+        "bezplatne",
+        "wymaga-klucza"
+      ],
+      "representativeQueries": [
+        "jaki jest status znaku towarowego USA o numerze zgłoszenia 78787878",
+        "pobierz historię postępowania i dokumenty znaku towarowego z USPTO po numerze rejestracji"
+      ],
+      "metadata": {
+        "auth": "klucz API (bezpłatny)",
+        "format": "REST/JSON",
+        "instytucja": "Urząd Patentów i Znaków Towarowych Stanów Zjednoczonych (USPTO)"
+      },
+      "updatedAt": "2026-09-09",
+      "en": {
+        "displayName": "USPTO TSDR — US trademark status & documents",
+        "description": "Official USPTO REST API (TSDR) for U.S. trademark case status, prosecution history and documents by serial or registration number. Free API key required.",
+        "representativeQueries": [
+          "what is the status of the U.S. trademark with serial number 78787878",
+          "fetch the prosecution history and documents for a USPTO trademark by registration number"
+        ],
+        "authLabel": "API key"
+      }
     }
   ]
 }
