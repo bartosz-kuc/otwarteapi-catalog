@@ -16,7 +16,7 @@ przykładowe zapytania. Ten sam plik serwuje sama strona pod
 ## Kto to prowadzi
 
 Bartosz Kuć (ten sam autor co [skanfirmy.pl](https://skanfirmy.pl)),
-prywatny projekt non-profit. Kontakt: firma@bartosza.pl. Więcej na
+prywatny projekt non-profit. Kontakt: kontakt@otwarteapi.pl. Więcej na
 [otwarteapi.pl/o-projekcie](https://otwarteapi.pl/o-projekcie).
 
 ## To jest lustro, nie źródło prawdy
