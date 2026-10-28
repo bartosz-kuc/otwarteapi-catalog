@@ -15,7 +15,7 @@
       "displayName": "Wykaz VAT (Biała Lista) — Ministerstwo Finansów",
       "type": "application/json",
       "jurisdiction": "PL",
-      "url": "https://wl-api.mf.gov.pl/",
+      "url": "https://wykazpodatnikowvat.mf.gov.pl/api/",
       "description": "Oficjalne REST API Ministerstwa Finansów do sprawdzania statusu VAT (czynny/zwolniony/niezarejestrowany) i rachunków bankowych podmiotu po numerze NIP. Bez klucza, bez rejestracji.",
       "tags": [
         "firmy",
@@ -33,7 +33,7 @@
         "format": "REST/JSON",
         "instytucja": "Ministerstwo Finansów"
       },
-      "updatedAt": "2026-07-18",
+      "updatedAt": "2026-10-28",
       "en": {
         "displayName": "VAT Register (Biała Lista) — Ministry of Finance",
         "description": "Official REST API of Poland's Ministry of Finance to check VAT status (active/exempt/unregistered) and a business's bank accounts by tax ID (NIP). No key, no registration required.",
